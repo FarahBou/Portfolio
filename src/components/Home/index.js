@@ -6,18 +6,46 @@ import React from 'react' ;
 import HomeStyled from './HomeStyled';
 
 const Home = () => (
-  <HomeStyled>
+  <HomeStyled> 
     <div className='about' >
-    <p className='content'>A propos</p>    
+      <p className='content'>A propos</p> 
+      <div className='night'>
+        <div className='shooting_star'></div>   
+        <div className='shooting_star'></div>  
+        <div className='shooting_star'></div> 
+        <div className='shooting_star'></div> 
+        <div className='shooting_star'></div>  
+      </div>             
     </div>
     <div className='skills' >
-    <p className='content'>Compétences</p>
+      <p className='content'>Compétences</p>
+      <div className='night'>
+        <div className='shooting_star'></div>   
+        <div className='shooting_star'></div>  
+        <div className='shooting_star'></div> 
+        <div className='shooting_star'></div> 
+        <div className='shooting_star'></div>  
+      </div>  
     </div>
     <div className='portfolio' >
-    <p className='content'>Portfolio</p>
+      <p className='content'>Portfolio</p>
+      <div className='night'>
+        <div className='shooting_star'></div>   
+        <div className='shooting_star'></div>  
+        <div className='shooting_star'></div> 
+        <div className='shooting_star'></div> 
+        <div className='shooting_star'></div>  
+      </div>  
     </div>
     <div className='contact' >
-    <p className='content'>Contact</p>
+      <p className='content'>Contact</p>
+      <div className='night'>
+        <div className='shooting_star'></div>   
+        <div className='shooting_star'></div>  
+        <div className='shooting_star'></div> 
+        <div className='shooting_star'></div> 
+        <div className='shooting_star'></div>  
+      </div>  
     </div>
   </HomeStyled>
 );
