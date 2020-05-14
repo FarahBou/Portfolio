@@ -15,12 +15,12 @@ const Music = () => {
   const handleClickMute = () => {
     document.querySelector('#mute').style.zIndex = -1;
     document.querySelector('#play').style.zIndex = 2;
-    audio.pause();
+    audio.play();
   };
   const handleClickPlay = () => {
     document.querySelector('#play').style.zIndex = -1;
     document.querySelector('#mute').style.zIndex = 2;
-    audio.play();
+    audio.pause();
   };
 
   return (
