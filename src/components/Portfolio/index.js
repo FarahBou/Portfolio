@@ -2,13 +2,13 @@ import React from 'react';
 
 // == Import
 
+import Header from 'src/components/Header';
 import PortfolioStyled from './PortfolioStyled';
-// import Header from 'src/components/Header';
 
 // == Composant
 const Portfolio = () => (
   <PortfolioStyled>
-    { /* <Header/> */ }
+    <Header id="header" slug="Portfolio" />
     <h1>Portfolio</h1>
   </PortfolioStyled>
 );

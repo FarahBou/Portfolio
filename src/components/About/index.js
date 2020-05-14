@@ -1,14 +1,13 @@
 import React from 'react';
 
 // == Import
-
+import Header from 'src/components/Header';
 import AboutStyled from './AboutStyled';
-// import Header from 'src/components/Header';
 
 // == Composant
 const About = () => (
   <AboutStyled>
-    { /* <Header/> */ }
+    <Header id="header" slug="A propos" />
     <h1>A propos</h1>
   </AboutStyled>
 );

@@ -2,13 +2,13 @@ import React from 'react';
 
 // == Import
 
+import Header from 'src/components/Header';
 import SkillsStyled from './SkillsStyled';
-// import Header from 'src/components/Header';
 
 // == Composant
 const Skills = () => (
   <SkillsStyled>
-    { /* <Header/> */ }
+    <Header id="header" slug="Skills" />
     <h1>Compétences</h1>
   </SkillsStyled>
 );
