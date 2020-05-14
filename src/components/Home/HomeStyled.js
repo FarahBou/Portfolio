@@ -56,9 +56,25 @@ div:hover {
   transform: scaleX(1.2);
 }
 
-.night {
+.night_about {
   position: relative;
   transform: rotateZ(45deg);
+  opacity: 0;
+}
+.night_skills {
+  position: relative;
+  transform: rotateZ(45deg);
+  opacity: 0;
+}
+.night_portfolio{
+  position: relative;
+  transform: rotateZ(45deg);
+  opacity: 0;
+}
+.night_contact{
+  position: relative;
+  transform: rotateZ(45deg);
+  opacity: 0;
 }
 
 .shooting_star {
@@ -69,6 +85,7 @@ div:hover {
   background: linear-gradient(-45deg, #5f91ff, rgba(0, 0, 255, 0));
   filter: drop-shadow(0 0 6px #699bff);
   animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
+ 
 }
 
 .shooting_star:hover::before, .shooting_star:hover::after {
