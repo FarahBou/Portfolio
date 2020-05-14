@@ -1,6 +1,7 @@
 // == Import npm
 /* eslint-disable */
 import React from 'react' ;
+import { Link } from "react-router-dom";
 
 // == Import
 import Header from './Header';
@@ -9,8 +10,10 @@ import HomeStyled from './HomeStyled';
 const Home = () => (
   <HomeStyled> 
     <Header id='header'/>
-    <div className='about' >
-      <p className='content'>A propos</p> 
+    <div className='about' >   
+      <Link to="/A-propos">
+        <p className='content'>A propos</p> 
+      </Link>  
       <div className='night_about'>
         <div className='shooting_star'></div>   
         <div className='shooting_star'></div>  
@@ -19,8 +22,10 @@ const Home = () => (
         <div className='shooting_star'></div>  
       </div>             
     </div>
-    <div className='skills' >
-      <p className='content'>Compétences</p>
+    <div className='skills' >   
+      <Link to="/Compétences">
+        <p className='content'>Compétences</p>
+      </Link> 
       <div className='night_skills'>
         <div className='shooting_star'></div>   
         <div className='shooting_star'></div>  
@@ -29,8 +34,10 @@ const Home = () => (
         <div className='shooting_star'></div>  
       </div>  
     </div>
-    <div className='portfolio' >
-      <p className='content'>Portfolio</p>
+    <div className='portfolio' >   
+      <Link to="/Portfolio">
+        <p className='content'>Portfolio</p>
+      </Link> 
       <div className='night_portfolio'>
         <div className='shooting_star'></div>   
         <div className='shooting_star'></div>  
@@ -39,8 +46,10 @@ const Home = () => (
         <div className='shooting_star'></div>  
       </div>  
     </div>
-    <div className='contact' >
-      <p className='content'>Contact</p>
+    <div className='contact' >   
+      <Link to="/Contact">
+        <p className='content'>Contact</p>
+      </Link> 
       <div className='night_contact'>
         <div className='shooting_star'></div>   
         <div className='shooting_star'></div>  
