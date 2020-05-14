@@ -9,28 +9,28 @@ overflow: hidden;
 .about {
   height: 100vh;
   width: 25%;
-  transition: transform .3s;
+  transition: 4s;
   -webkit-filter: brightness(0.8);
   background: linear-gradient(#0D1321, #250902);
 }
 .skills {
   height: 100vh;
   width: 25%;
-  transition: transform .3s;
+  transition: 4s;
   -webkit-filter: brightness(0.8);
   background: linear-gradient(#1D2D44, #38040E);
 }
 .portfolio {
   height: 100vh;
   width: 25%;
-  transition: transform .3s;
+  transition: 4s;
   -webkit-filter: brightness(0.8);
   background: linear-gradient(#3E5C76, #640D14);
 }
 .contact {
   height: 100vh;
   width: 25%;
-  transition: transform .3s;
+  transition: 4s;
   -webkit-filter: brightness(0.8);
   background: linear-gradient(#748CAB, #800E13);
 }
@@ -46,9 +46,9 @@ div:hover {
   line-height: 100vh; 
   color: #F0EBD8 ;
   font-size: 2em;
-  font-family: "Rajdhani", cursive;
+  font-family: 'Megrim', cursive;
   opacity: 0;
-  transition:5s;
+  transition:4s;
 }
 
 .content:hover {
