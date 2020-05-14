@@ -6,6 +6,10 @@ display: flex;
 flex-direction: row;
 overflow: hidden;
 
+#header {
+  z-index: 1;
+}
+
 .about {
   height: 100vh;
   width: 25%;

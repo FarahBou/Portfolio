@@ -3,10 +3,12 @@
 import React from 'react' ;
 
 // == Import
+import Header from './Header';
 import HomeStyled from './HomeStyled';
 
 const Home = () => (
   <HomeStyled> 
+    <Header id='header'/>
     <div className='about' >
       <p className='content'>A propos</p> 
       <div className='night_about'>
