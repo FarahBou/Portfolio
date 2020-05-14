@@ -6,10 +6,6 @@ display: flex;
 flex-direction: row;
 overflow: hidden;
 
-#music {
-  z-index: 1;
-}
-
 .about {
   height: 100vh;
   width: 25%;

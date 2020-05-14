@@ -4,12 +4,10 @@ import React from 'react' ;
 import { Link } from 'react-router-dom';
 
 // == Import
-import Music from './Music';
 import HomeStyled from './HomeStyled';
 
 const Home = () => (
   <HomeStyled> 
-    <Music id='music'/>
     <div className='about' >   
       <Link to="/A-propos">
         <p className='content'>A propos</p> 

@@ -16,7 +16,6 @@ const Music = () => {
     document.querySelector('#mute').style.zIndex = -1;
     document.querySelector('#play').style.zIndex = 2;
     audio.pause();
-    audio.currentTime = 0;
   };
   const handleClickPlay = () => {
     document.querySelector('#play').style.zIndex = -1;
