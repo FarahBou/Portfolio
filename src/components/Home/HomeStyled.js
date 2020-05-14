@@ -6,7 +6,7 @@ display: flex;
 flex-direction: row;
 overflow: hidden;
 
-#header {
+#music {
   z-index: 1;
 }
 

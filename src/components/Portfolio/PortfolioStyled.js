@@ -14,5 +14,6 @@ h1{
   text-align: center;
   font-size: 4em;
   padding-top: 110px;
+  text-shadow: 1px 1px 3px black; 
 }
 `;

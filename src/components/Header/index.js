@@ -11,21 +11,47 @@ import HeaderStyled from './HeaderStyled';
 // == Composant
 const Header = ({ slug }) => {
   useEffect(() => {
+    const about = document.querySelector('#about');
+    const skills = document.querySelector('#skills');
+    const portfolio = document.querySelector('#portfolio');
+    const contact = document.querySelector('#contact');
+
+    about.addEventListener('mouseover', () => {
+      about.style.textDecoration = 'underline';
+    });
+    about.addEventListener('mouseout', () => {
+      about.style.textDecoration = null;
+    });
+    skills.addEventListener('mouseover', () => {
+      skills.style.textDecoration = 'underline';
+    });
+    skills.addEventListener('mouseout', () => {
+      skills.style.textDecoration = null;
+    });
+    portfolio.addEventListener('mouseover', () => {
+      portfolio.style.textDecoration = 'underline';
+    });
+    portfolio.addEventListener('mouseout', () => {
+      portfolio.style.textDecoration = null;
+    });
     if (slug === 'A propos') {
-      document.querySelector('#about').style.textDecoration = 'underline';
-      document.querySelector('#about').style.fontWeight = 'bold';
+      about.style.fontWeight = 'bold';
     }
+    contact.addEventListener('mouseover', () => {
+      contact.style.textDecoration = 'underline';
+    });
+    contact.addEventListener('mouseout', () => {
+      contact.style.textDecoration = null;
+    });
+
     if (slug === 'Skills') {
-      document.querySelector('#skills').style.textDecoration = 'underline';
-      document.querySelector('#skills').style.fontWeight = 'bold';
+      skills.style.fontWeight = 'bold';
     }
     if (slug === 'Portfolio') {
-      document.querySelector('#portfolio').style.textDecoration = 'underline';
-      document.querySelector('#portfolio').style.fontWeight = 'bold';
+      portfolio.style.fontWeight = 'bold';
     }
     if (slug === 'Contact') {
-      document.querySelector('#contact').style.textDecoration = 'underline';
-      document.querySelector('#contact').style.fontWeight = 'bold';
+      contact.style.fontWeight = 'bold';
     }
   }, [{ slug }]);
 

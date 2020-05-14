@@ -6,13 +6,13 @@ export default styled.div`
   position: absolute;
   right: 8px;
   top: 1px; 
-  z-index: 0;
+  z-index: -1;
   }
 
 #play {
   position: absolute;
   right: 3px;
   top: 1px;
-  z-index: 1; 
+  z-index: 2; 
   }
 `;

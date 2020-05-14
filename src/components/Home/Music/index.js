@@ -4,33 +4,33 @@ import React from 'react';
 // == Import
 import MUTE from 'src/assets/mute.png';
 import PLAY from 'src/assets/play.png';
-import Music from 'src/assets/music.mp3';
-import HeaderStyled from './HeaderStyled';
+import Sound from 'src/assets/music.mp3';
+import MusicStyled from './MusicStyled';
 
 // == Composant
-const Header = () => {
+const Music = () => {
 
-  const audio = new Audio(Music);
+  const audio = new Audio(Sound);
 
   const handleClickMute = () => {
-    document.querySelector('#mute').style.zIndex = 0;
-    document.querySelector('#play').style.zIndex = 1;
+    document.querySelector('#mute').style.zIndex = -1;
+    document.querySelector('#play').style.zIndex = 2;
     audio.pause();
     audio.currentTime = 0;
   };
   const handleClickPlay = () => {
-    document.querySelector('#play').style.zIndex = 0;
-    document.querySelector('#mute').style.zIndex = 1;
+    document.querySelector('#play').style.zIndex = -1;
+    document.querySelector('#mute').style.zIndex = 2;
     audio.play();
   };
 
   return (
-    <HeaderStyled>
+    <MusicStyled>
       <img src={MUTE} id="mute" alt="mute" onClick={handleClickMute} />
       <img src={PLAY} id="play" alt="play" onClick={handleClickPlay} />
-    </HeaderStyled>
+    </MusicStyled>
   );
 };
 
 // == Export
-export default Header;
+export default Music;
