@@ -77,6 +77,19 @@ module.exports = {
           name: 'static/media/[name].[hash:8].[ext]'
         }
       },
+
+      //PDF
+      {
+        test: /\.(pdf)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]'
+            }
+          }
+        ]
+      }
     ],
   },
 };
