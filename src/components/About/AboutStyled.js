@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export default styled.div`  
-height: 100%;
+min-height: 100vh;
 background: linear-gradient(#0D1321, #250902);
 
 #header {
@@ -37,7 +37,7 @@ h1{
   line-height: 1.3em;
   text-align: left;
   width: 62%;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 #aboutMe p{
