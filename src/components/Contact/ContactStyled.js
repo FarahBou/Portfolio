@@ -22,8 +22,8 @@ h1{
 background-color : #F0EBD8;
  padding: 2.5rem;
  border-radius: 2rem;
- width: 50%;
- margin: 54px 25% 30px;  
+ width: 40%;
+ margin: 54px 30% 30px;  
 } 
 
 .actionsDesktop {
