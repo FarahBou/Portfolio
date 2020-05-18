@@ -1,4 +1,5 @@
 import React from 'react';
+import 'semantic-ui-css/semantic.min.css';
 import PropTypes from 'prop-types';
 import { Button } from 'semantic-ui-react';
 
@@ -39,7 +40,7 @@ const Contact = ({
         <Field
           value={email}
           onChange={changeField}
-          placeholder="Votre email"
+          placeholder="Email"
           name="email"
           type="email"
         />

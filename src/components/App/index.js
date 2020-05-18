@@ -1,6 +1,5 @@
 // == Import npm
 import React from 'react';
-import 'semantic-ui-css/semantic.min.css';
 import { Route, Switch } from 'react-router-dom';
 
 // == Import

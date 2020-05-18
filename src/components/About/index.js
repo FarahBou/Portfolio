@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button } from 'semantic-ui-react'
 
 // == Import
 import Header from 'src/components/Header';
@@ -48,14 +47,14 @@ const About = () => (
           <img src={fitness} alt="profil" />
           <img src={videogames} alt="profil" />
         </div>
-        <Button
+        <a
           id="button"
           href={CV}
           download
         >
           Pour en savoir plus :  CV
           <img id="icon" src={Download} alt="CV" />
-        </Button>
+        </a>
       </div>
     </div>
   </AboutStyled>

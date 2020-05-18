@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export default styled.div`  
 min-height: 100vh;
 background: linear-gradient(#0D1321, #250902);
+overflow: hidden;
 
 #header {
   z-index: 1;
@@ -54,5 +55,9 @@ h1{
   height: 32px;
   margin: 0 0 -4px 5px;
 }
+
+a { 
+  color: inherit; 
+} 
 
 `;

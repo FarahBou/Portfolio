@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export default styled.div`  
 height: 100vh;
 background: linear-gradient(#3E5C76, #640D14);
+overflow: hidden;
 
 #header {
   z-index: 1;

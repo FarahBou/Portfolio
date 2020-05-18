@@ -20,14 +20,14 @@ h1{
 
 .formDesktop{
 background-color : #F0EBD8;
- padding: 3rem;
+ padding: 2.5rem;
  border-radius: 2rem;
  width: 50%;
  margin: 54px 25% 30px;  
 } 
 
 .actionsDesktop {
-  margin-top: 3em;
+  margin-top: 2.5em;
   text-align: center;
 }
 
