@@ -12,7 +12,7 @@ import ContactStyled from './ContactStyled';
 
 // == Composant
 const Contact = ({
-  firstname, email, message, status, changeField, handleContact,
+  firstname, email, message, error, status, changeField, handleContact,
 }) => {
   const handleSubmit = (evt) => {
     evt.preventDefault();
@@ -75,7 +75,8 @@ const Contact = ({
 };
 
 Contact.propTypes = {
-  status: PropTypes.number.isRequired,
+  error: PropTypes.string.isRequired,
+  status: PropTypes.string.isRequired,
   firstname: PropTypes.string.isRequired,
   email: PropTypes.string.isRequired,
   message: PropTypes.string.isRequired,

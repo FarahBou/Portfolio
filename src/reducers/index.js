@@ -1,4 +1,4 @@
-import { CHANGE_FIELD } from 'src/actions/contact';
+import { CHANGE_FIELD, SET_ERROR, SET_SENT } from 'src/actions/contact';
 
 // Action Types
 
@@ -8,7 +8,8 @@ const initialState = {
   firstname: '',
   email: '',
   message: '',
-  status: 0,
+  error: '',
+  status: '',
 };
 
 // Reducer
@@ -18,6 +19,16 @@ const contactReducer = (state = initialState, action = {}) => {
       return {
         ...state,
         [action.name]: action.value,
+      };
+    case SET_ERROR:
+      return {
+        ...state,
+        error: action.error,
+      };
+    case SET_SENT:
+      return {
+        ...state,
+        status: action.status,
       };
     default:
       return state;
