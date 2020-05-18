@@ -1,10 +1,27 @@
-import { combineReducers } from 'redux';
+import { CHANGE_FIELD } from 'src/actions/contact';
 
-import demoReducer from './demo';
+// Action Types
 
-const rootReducer = combineReducers({
-  demo: demoReducer,
-  // ... autres reducers
-});
+// Initial State
+// state.auth....
+const initialState = {
+  firstname: '',
+  email: '',
+  message: '',
+  status: 0,
+};
 
-export default rootReducer;
+// Reducer
+const contactReducer = (state = initialState, action = {}) => {
+  switch (action.type) {
+    case CHANGE_FIELD:
+      return {
+        ...state,
+        [action.name]: action.value,
+      };
+    default:
+      return state;
+  }
+};
+
+export default contactReducer;

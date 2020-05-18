@@ -1,5 +1,6 @@
 // == Import npm
 import React from 'react';
+import 'semantic-ui-css/semantic.min.css';
 import { Route, Switch } from 'react-router-dom';
 
 // == Import
@@ -8,7 +9,7 @@ import Home from 'src/components/Home';
 import About from 'src/components/About';
 import Skills from 'src/components/Skills';
 import Portfolio from 'src/components/Portfolio';
-import Contact from 'src/components/Contact';
+import Contact from 'src/containers/Contact';
 import NotFound from 'src/components/NotFound';
 import AppStyled from './AppStyled';
 

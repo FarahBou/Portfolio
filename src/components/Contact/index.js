@@ -11,11 +11,11 @@ import ContactStyled from './ContactStyled';
 
 // == Composant
 const Contact = ({
-  firstname, email, message, status, changeField, handleSend,
+  firstname, email, message, status, changeField, handleContact,
 }) => {
   const handleSubmit = (evt) => {
     evt.preventDefault();
-    handleSend();
+    handleContact();
   };
 
   const firstnameE = '';
@@ -26,7 +26,7 @@ const Contact = ({
     <ContactStyled>
       <Header id="header" slug="Contact" />
       <h1>Contact</h1>
-      <form className="formDesktop">
+      <form className="formDesktop" onSubmit={handleSubmit}>
         <Field
           value={firstname}
           onChange={changeField}
@@ -59,7 +59,10 @@ const Contact = ({
           {(status > 0)
           && <p style={{ color: 'green' }}>Le message a bien été envoyé</p>}
           <Button
+            inverted
+            color="pink"
             type="submit"
+            className="button"
           >
             Envoyer
           </Button>
@@ -76,7 +79,7 @@ Contact.propTypes = {
   email: PropTypes.string.isRequired,
   message: PropTypes.string.isRequired,
   changeField: PropTypes.func.isRequired,
-  handleSend: PropTypes.func.isRequired,
+  handleContact: PropTypes.func.isRequired,
 };
 
 

@@ -29,6 +29,7 @@ const FieldTA = ({
       </label>
       <textarea
         className="input"
+        style={{ height: '150px' }}
         placeholder={placeholder}
         type={type}
         id={name}

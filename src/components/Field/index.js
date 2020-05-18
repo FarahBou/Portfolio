@@ -29,6 +29,7 @@ const Field = ({
       </label>
       <input
         className="input"
+        style={{ height: '60px' }}
         placeholder={placeholder}
         type={type}
         id={name}

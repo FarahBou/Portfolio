@@ -15,7 +15,7 @@ export default styled.div`
     border-radius: 1rem;
     border: 2px solid #F0EBD8;
     width: 100%;
-    color: white;
+    color: black;
     &:focus {
       border-color: #748CAB;
     }
