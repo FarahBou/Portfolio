@@ -15,17 +15,19 @@ const ajaxMiddleware = (store) => (next) => (action) => {
   };
   const saveStatus = (response) => {
     store.dispatch(setSent(response.data.status));
+    //console.log(response.data.status)
   };
   switch (action.type) {
     case CONTACT: {
       const state = store.getState();
-      //console.log("firstname", state.firstname);
+      console.log('name :', state.fistname);
+      console.log('message :', state.message);
 
       axios({
         method: 'post',
-        url: '',
+        url: 'http://localhost:3002/send',
         data: {
-          firstname: state.firstname,
+          name: state.fistname,
           email: state.email,
           message: state.message,
         },

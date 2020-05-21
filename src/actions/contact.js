@@ -11,7 +11,7 @@ export const changeField = (value, name) => ({
   name,
 });
 
-export const Contact = () => ({
+export const ContactInfo = () => ({
   type: CONTACT,
 });
 

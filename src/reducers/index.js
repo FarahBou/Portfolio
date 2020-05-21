@@ -5,7 +5,7 @@ import { CHANGE_FIELD, SET_ERROR, SET_SENT } from 'src/actions/contact';
 // Initial State
 // state.auth....
 const initialState = {
-  firstname: '',
+  name: '',
   email: '',
   message: '',
   error: '',

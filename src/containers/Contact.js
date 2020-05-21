@@ -2,11 +2,11 @@ import { connect } from 'react-redux';
 
 import Contact from 'src/components/Contact';
 
-import { changeField } from 'src/actions/contact';
+import { changeField, ContactInfo } from 'src/actions/contact';
 
 // == Data / state
 const mapStateToProps = (state) => ({
-  firstname: state.firstname,
+  name: state.name,
   email: state.email,
   message: state.message,
   error: state.error,
@@ -18,6 +18,9 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => ({
   changeField: (value, name) => {
     dispatch(changeField(value, name));
+  },
+  handleContact: () => {
+    dispatch(ContactInfo());
   },
 });
 

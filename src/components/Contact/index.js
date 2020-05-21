@@ -12,16 +12,19 @@ import ContactStyled from './ContactStyled';
 
 // == Composant
 const Contact = ({
-  firstname, email, message, error, status, changeField, handleContact,
+  name, email, message, status, changeField, handleContact,
 }) => {
   const handleSubmit = (evt) => {
     evt.preventDefault();
     handleContact();
   };
-
-  const firstnameE = '';
-  const emailE = '';
-  const messageE = '';
+  const handleClick = (evt) => {
+    evt.preventDefault();
+    // eslint-disable-next-line no-console
+    console.log('click');
+    // eslint-disable-next-line no-alert
+    alert('Veuillez écrire un message');
+  };
 
   return (
     <ContactStyled>
@@ -29,14 +32,12 @@ const Contact = ({
       <h1>Contact</h1>
       <form className="formDesktop" onSubmit={handleSubmit}>
         <Field
-          value={firstname}
+          value={name}
           onChange={changeField}
           placeholder="Nom"
-          name="firstname"
+          name="name"
           type="text"
         />
-        {(firstnameE.length > 0)
-          && <p style={{ color: 'red' }}>{firstnameE}</p>}
         <Field
           value={email}
           onChange={changeField}
@@ -44,8 +45,6 @@ const Contact = ({
           name="email"
           type="email"
         />
-        {(emailE.length > 0)
-          && <p style={{ color: 'red' }}>{emailE}</p>}
         <FieldTA
           value={message}
           onChange={changeField}
@@ -53,20 +52,33 @@ const Contact = ({
           name="message"
           type="text"
         />
-        {(messageE.length > 0)
-          && <p style={{ color: 'red' }}>{messageE}</p>}
 
         <div className="actionsDesktop">
-          {(status > 0)
-          && <p style={{ color: 'green' }}>Le message a bien été envoyé</p>}
-          <Button
-            inverted
-            color="white"
-            type="submit"
-            className="button"
-          >
-            Envoyer
-          </Button>
+          {(status === 'success')
+            && (<p style={{ color: 'green' }}>Le message a bien été envoyé</p>)}
+          {(status === 'fail')
+            && (<p style={{ color: 'red' }}>Une erreur est survenue</p>)}
+          {(message.length > 0)
+            && (
+            <Button
+              inverted
+              type="submit"
+              className="button"
+            >
+              Envoyer
+            </Button>
+            )}
+          {(message.length === 0)
+            && (
+            <Button
+              inverted
+              type="button"
+              className="button"
+              onClick={handleClick}
+            >
+              Envoyer
+            </Button>
+            )}
         </div>
       </form>
     </ContactStyled>
@@ -75,9 +87,8 @@ const Contact = ({
 };
 
 Contact.propTypes = {
-  error: PropTypes.string.isRequired,
   status: PropTypes.string.isRequired,
-  firstname: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
   email: PropTypes.string.isRequired,
   message: PropTypes.string.isRequired,
   changeField: PropTypes.func.isRequired,
