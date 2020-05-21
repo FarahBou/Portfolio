@@ -20,14 +20,14 @@ const ajaxMiddleware = (store) => (next) => (action) => {
   switch (action.type) {
     case CONTACT: {
       const state = store.getState();
-      console.log('name :', state.fistname);
+      console.log('name :', state.name);
       console.log('message :', state.message);
 
       axios({
         method: 'post',
         url: 'http://localhost:3002/send',
         data: {
-          name: state.fistname,
+          name: state.name,
           email: state.email,
           message: state.message,
         },
