@@ -19,11 +19,11 @@ h1{
 }
 
 .formDesktop{
-background-color : #F0EBD8;
  padding: 2.5rem;
  border-radius: 2rem;
  width: 40%;
  margin: 54px 30% 30px;  
+ border: 2px solid white;
 } 
 
 .actionsDesktop {

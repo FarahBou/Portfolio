@@ -61,7 +61,7 @@ const Contact = ({
           && <p style={{ color: 'green' }}>Le message a bien été envoyé</p>}
           <Button
             inverted
-            color="pink"
+            color="white"
             type="submit"
             className="button"
           >

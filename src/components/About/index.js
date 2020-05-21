@@ -11,6 +11,7 @@ import fitness from 'src/assets/fitness.png';
 import videogames from 'src/assets/videogames.png';
 import astronomy from 'src/assets/astronomie.png';
 import Download from 'src/assets/download.png';
+import Linkedin from 'src/assets/linkedin.svg';
 import AboutStyled from './AboutStyled';
 
 // == Composant
@@ -54,6 +55,11 @@ const About = () => (
         >
           Pour en savoir plus :  CV
           <img id="icon" src={Download} alt="CV" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/farah-bouzbib-079024109/"
+        >
+          <img id="icon" src={Linkedin} alt="linkedin" />
         </a>
       </div>
     </div>
