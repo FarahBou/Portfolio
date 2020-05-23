@@ -1,11 +1,10 @@
 import styled from 'styled-components';
 
 export default styled.div`
-
 display: flex;
+flex-wrap: wrap;
 flex-direction: row;
 overflow: hidden;
-
 .about {
   height: 100vh;
   width: 25%;
@@ -34,28 +33,102 @@ overflow: hidden;
   -webkit-filter: brightness(0.8);
   background: linear-gradient(#748CAB, #800E13);
 }
-
+@media only screen and (max-device-width: 700px){
+  .about {
+    height: 50vh;
+    width: 50%;
+    transition: 4s;
+    -webkit-filter: brightness(0.8);
+    background: linear-gradient(#0D1321, #250902);
+  }
+  .skills {
+    height: 50vh;
+    width: 50%;
+    transition: 4s;
+    -webkit-filter: brightness(0.8);
+    background: linear-gradient(#1D2D44, #38040E);
+  }
+  .portfolio {
+    height: 50vh;
+    width: 50%;
+    transition: 4s;
+    -webkit-filter: brightness(0.8);
+    background: linear-gradient(#3E5C76, #640D14);
+  }
+  .contact {
+    height: 50vh;
+    width: 50%;
+    transition: 4s;
+    -webkit-filter: brightness(0.8);
+    background: linear-gradient(#748CAB, #800E13);
+  }
+}
 div:hover {
   transform: scaleX(1.2);
   -webkit-filter: brightness(1);
 }
-
-.content {
-  text-align: center;
-  vertical-align: middle;
-  line-height: 100vh; 
-  color: #F0EBD8 ;
-  font-size: 2em;
-  font-family: 'Megrim', cursive;
-  opacity: 0;
-  transition:4s;
+@media only screen and (max-device-width: 1366px){
+  div{
+    -webkit-filter: brightness(1);
+  }
 }
-
+@media only screen and (min-width: 1200px){
+  .content {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100vh; 
+    color: #F0EBD8 ;
+    font-size: 2em;
+    font-family: 'Megrim', cursive;
+    opacity: 0;
+    transition:4s;
+  }
+}
+@media only screen and (max-width: 1199px){
+  .content {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100vh; 
+    color: #F0EBD8 ;
+    font-size: 1.3em;
+    font-family: 'Megrim', cursive;
+    opacity: 0;
+    transition:4s;
+  }
+}
+@media only screen and (max-width: 800px){
+  .content {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100vh; 
+    color: #F0EBD8 ;
+    font-size: 1em;
+    font-family: 'Megrim', cursive;
+    opacity: 0;
+    transition:4s;
+  }
+}
+@media only screen and (max-device-width: 700px){
+  .content {
+    text-align: center;
+    line-height: 50vh; 
+    color: #F0EBD8 ;
+    font-size: 1.3em;
+    font-family: 'Megrim', cursive;
+    opacity: 0;
+    transition:4s;
+  }
+}
 .content:hover {
   opacity: 1;
   transform: scaleX(1.2);
 }
-
+@media only screen and (max-device-width: 1366px){
+  .content {
+    opacity: 1;
+    transform: scaleX(1.2);
+  }
+}
 .night_about {
   position: relative;
   transform: rotateZ(45deg);
@@ -76,7 +149,6 @@ div:hover {
   transform: rotateZ(45deg);
   opacity: 0;
 }
-
 .shooting_star {
   position: absolute;
   top: 25%;
@@ -87,7 +159,6 @@ div:hover {
   animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
  
 }
-
 .shooting_star:hover::before, .shooting_star:hover::after {
   position: absolute;
   content: '';
@@ -99,11 +170,9 @@ div:hover {
   transform: translateX(50%) rotateZ(45deg);
   animation: shining 3000ms ease-in-out infinite;
 }
-
 .shooting_star::after {
   transform: translateX(50%) rotateZ(-45deg);
 }
-
 .shooting_star:nth-child(1) {
   top: calc(50% - 600px);
   left: calc(50% - 500px);
@@ -112,7 +181,6 @@ div:hover {
 .shooting_star:nth-child(1)::before, .shooting_star:nth-child(1)::after {
   animation-delay: 650ms;
 }
-
 .shooting_star:nth-child(2) {
   top: calc(50% - 200px);
   left: calc(50% - 300px);
@@ -121,7 +189,6 @@ div:hover {
 .shooting_star:nth-child(2)::before, .shooting_star:nth-child(2)::after {
   animation-delay: 150ms;
 }
-
 .shooting_star:nth-child(3) {
   top: calc(50% - 300px);
   left: calc(50% - 200px);
@@ -130,7 +197,6 @@ div:hover {
 .shooting_star:nth-child(3)::before, .shooting_star:nth-child(3)::after {
   animation-delay: 1600ms;
 }
-
 .shooting_star:nth-child(4) {
   top: calc(50% - 400px);
   left: calc(50% - 600px);
@@ -139,7 +205,6 @@ div:hover {
 .shooting_star:nth-child(4)::before, .shooting_star:nth-child(4)::after {
   animation-delay: 4700ms;
 }
-
 .shooting_star:nth-child(5) {
   top: calc(50% - -30px);
   left: calc(50% - 200px);
@@ -148,8 +213,6 @@ div:hover {
 .shooting_star:nth-child(5)::before, .shooting_star:nth-child(5)::after {
   animation-delay: 2100ms;
 }
-
-
 /* Animations */
 @keyframes tail {
   0% {
@@ -164,7 +227,6 @@ div:hover {
     width: 0;
   }
 }
-
 @keyframes shining {
   0% {
     width: 0;
@@ -176,7 +238,6 @@ div:hover {
     width: 0;
   }
 }
-
 @keyframes shooting {
   0% {
     transform: translateX(0);
