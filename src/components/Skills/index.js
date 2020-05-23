@@ -1,9 +1,7 @@
 import React from 'react';
 
 // == Import
-
 import Header from 'src/components/Header';
-import SkillsStyled from './SkillsStyled';
 import ReactNat from 'src/assets/skills/icons8-react-native.svg';
 import Redux from 'src/assets/skills/icons8-redux.svg';
 import Js from 'src/assets/skills/icons8-js-96.png';
@@ -21,6 +19,7 @@ import Node from 'src/assets/skills/icons8-nodejs.svg';
 import Mongo from 'src/assets/skills/icons8-mongodb.svg';
 import Symfony from 'src/assets/skills/icons8-symfony.svg';
 import Python from 'src/assets/skills/icons8-python.svg';
+import SkillsStyled from './SkillsStyled';
 
 // == Composant
 const Skills = () => (
