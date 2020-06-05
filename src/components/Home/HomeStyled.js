@@ -5,6 +5,7 @@ display: flex;
 flex-wrap: wrap;
 flex-direction: row;
 overflow: hidden;
+
 .about {
   height: 100vh;
   width: 25%;
@@ -12,6 +13,7 @@ overflow: hidden;
   -webkit-filter: brightness(0.8);
   background: linear-gradient(#0D1321, #250902);
 }
+
 .skills {
   height: 100vh;
   width: 25%;
@@ -19,6 +21,7 @@ overflow: hidden;
   -webkit-filter: brightness(0.8);
   background: linear-gradient(#1D2D44, #38040E);
 }
+
 .portfolio {
   height: 100vh;
   width: 25%;
@@ -26,6 +29,7 @@ overflow: hidden;
   -webkit-filter: brightness(0.8);
   background: linear-gradient(#3E5C76, #640D14);
 }
+
 .contact {
   height: 100vh;
   width: 25%;
@@ -33,6 +37,7 @@ overflow: hidden;
   -webkit-filter: brightness(0.8);
   background: linear-gradient(#748CAB, #800E13);
 }
+
 @media only screen and (max-device-width: 1024px){
   .about {
     height: 50vh;
@@ -63,15 +68,18 @@ overflow: hidden;
     background: linear-gradient(#748CAB, #800E13);
   }
 }
+
 div:hover {
   transform: scaleX(1.2);
   -webkit-filter: brightness(1);
 }
+
 @media only screen and (max-device-width: 1366px){
   div{
     -webkit-filter: brightness(1);
   }
 }
+
 @media only screen and (min-width: 1200px){
   .content {
     text-align: center;
@@ -84,6 +92,7 @@ div:hover {
     transition:4s;
   }
 }
+
 @media only screen and (max-width: 1199px){
   .content {
     text-align: center;

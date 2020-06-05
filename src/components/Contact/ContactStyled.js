@@ -57,7 +57,7 @@ h1{
 @media only screen and (max-width: 550px){
 
   h1{
-    font-size: 3em;
+    font-size: 2em;
   }
   .formDesktop{
     padding: 2rem;

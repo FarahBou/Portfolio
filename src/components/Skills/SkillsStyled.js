@@ -60,6 +60,7 @@ h2 {
   display: flex;
   flex-direction: row; 
   flex-wrap: wrap;
+  padding: 0 10px 10px;
 }
 
 #work img{
@@ -87,7 +88,7 @@ h2 {
 
 @media only screen and (max-width: 720px){
   h1{
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
   #box {
@@ -106,6 +107,14 @@ h2 {
 
   #work img{
     height: 52px;
+    padding-right: 10px;
+  }
+
+  #work {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 

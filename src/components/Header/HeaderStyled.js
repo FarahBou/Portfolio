@@ -12,7 +12,7 @@ top: 20px;
 p {
   padding: 0 10px;
   color: #F0EBD8 ;
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-family: 'Megrim', cursive;
   text-shadow: 1px 1px 3px black; 
 }
@@ -21,10 +21,7 @@ p {
   left: 20px;
   p {
     padding: 0 9px;
-    color: #F0EBD8 ;
     font-size: 1em;
-    font-family: 'Megrim', cursive;
-    text-shadow: 1px 1px 3px black; 
   }
 }
 
@@ -32,10 +29,7 @@ p {
   left: 13px;
   p {
     padding: 0 7px;
-    color: #F0EBD8 ;
     font-size: 0.9em;
-    font-family: 'Megrim', cursive;
-    text-shadow: 1px 1px 3px black; 
   }
 }
 
@@ -43,10 +37,7 @@ p {
   left: 13px;
   p {
     padding: 0 5px;
-    color: #F0EBD8 ;
     font-size: 0.8em;
-    font-family: 'Megrim', cursive;
-    text-shadow: 1px 1px 3px black; 
   }
 }
 
