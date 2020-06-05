@@ -40,8 +40,8 @@ h1{
   color: #F0EBD8 ;
   padding: 2.5rem;
   border-radius: 2rem;
-  width: 70%;
-  margin: 54px 30% 30px;  
+  width: 60%;
+  margin: 54px 0 30px;  
   border: 2px solid white;
 } 
 
@@ -51,8 +51,32 @@ h1{
 }
 
 .button {
-  font-family: 'Megrim', cursive;
   font-size: 1.5em;
+}
+
+@media only screen and (max-width: 550px){
+
+  h1{
+    font-size: 3em;
+  }
+  .formDesktop{
+    padding: 2rem;
+    border-radius: 1.5rem;
+    width: 80%;
+    margin: 54px 0 30px;  
+  } 
+}
+
+@media only screen and (max-width: 450px){
+
+  .formDesktop{
+    border-radius: 1rem;
+    margin: 54px 0 30px; 
+  } 
+
+  .button {
+    font-size: 1em;
+  }
 }
 
 `;

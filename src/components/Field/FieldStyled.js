@@ -20,4 +20,12 @@ export default styled.div`
       border-color: #748CAB;
     }
   }
+
+  @media only screen and (max-width: 450px){
+  
+    .input {
+      font-size: 1.2em;
+      padding: 0.8rem 0.8rem;
+      border-radius: 0.6rem;
+  }
 `;
