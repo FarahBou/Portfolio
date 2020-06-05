@@ -4,6 +4,10 @@ export default styled.div`
 min-height: 100vh;
 background: linear-gradient(#0D1321, #250902);
 overflow: hidden;
+align-items: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
 
 #header {
   z-index: 1;
@@ -19,7 +23,6 @@ h1{
 }
 
 #box {
-  margin-top: 80px;
 }
 
 .profil {
@@ -37,7 +40,7 @@ h1{
   font-size: 1.5rem;
   line-height: 1.3em;
   text-align: left;
-  margin: 0 30px 10px 30px;
+  margin: 80px 30px 10px 30px;
 }
 
 #hobbies{

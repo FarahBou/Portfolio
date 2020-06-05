@@ -4,6 +4,10 @@ export default styled.div`
 min-height: 100vh;
 background: linear-gradient(#1D2D44, #38040E);
 overflow: hidden;
+align-items: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
 
 #header {
   z-index: 1;

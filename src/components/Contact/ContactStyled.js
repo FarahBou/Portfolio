@@ -4,6 +4,10 @@ export default styled.div`
 min-height: 100vh;
 background: linear-gradient(#748CAB, #800E13);
 overflow: hidden;
+align-items: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
 
 #header {
   z-index: 1;
@@ -21,7 +25,7 @@ h1{
 .formDesktop{
  padding: 2.5rem;
  border-radius: 2rem;
- width: 40%;
+ width: 70%;
  margin: 54px 30% 30px;  
  border: 2px solid white;
 } 
