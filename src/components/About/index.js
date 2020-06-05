@@ -20,8 +20,8 @@ const About = () => (
     <Header id="header" slug="A propos" />
     <h1>A propos de Farah Bouzbib</h1>
     <div id="box">
-      <img src={Profil} alt="profil" className="profil" />
       <div id="aboutMe">
+      <img src={Profil} alt="profil" className="profil" />
         <p>
           Anciennement ingénieure calculs chez Framatome (ex-Areva),
           je suis devenu depuis peu développeuse web spécialisée en Front-end | React/Redux.
@@ -55,11 +55,11 @@ const About = () => (
         >
           Pour en savoir plus :  CV
           <img id="icon" src={Download} alt="CV" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/farah-bouzbib-079024109/"
-        >
-          <img id="icon" src={Linkedin} alt="linkedin" />
+          <a
+            href="https://www.linkedin.com/in/farah-bouzbib-079024109/"
+          >
+            <img id="icon" src={Linkedin} alt="linkedin" />
+          </a>
         </a>
       </div>
     </div>

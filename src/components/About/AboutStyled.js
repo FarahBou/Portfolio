@@ -19,16 +19,16 @@ h1{
 }
 
 #box {
-  display: flex;
-  flex-direction: row; 
   margin-top: 80px;
 }
 
 .profil {
   background-repeat : no-repeat;
   background-position: center;
-  height: 500px;
-  margin: 0 30px;
+  margin-right: 30px;
+  width: 30%;
+  height: 20%;
+  float: left;
 }
 
 #aboutMe {
@@ -37,12 +37,7 @@ h1{
   font-size: 1.5rem;
   line-height: 1.3em;
   text-align: left;
-  width: 62%;
-  margin-bottom: 10px;
-}
-
-#aboutMe p{
-  padding-bottom: 40px;
+  margin: 0 30px 10px 30px;
 }
 
 #hobbies{
