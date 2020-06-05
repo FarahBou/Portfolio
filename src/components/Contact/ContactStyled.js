@@ -37,11 +37,12 @@ h1{
 }
 
 .formDesktop{
- padding: 2.5rem;
- border-radius: 2rem;
- width: 70%;
- margin: 54px 30% 30px;  
- border: 2px solid white;
+  color: #F0EBD8 ;
+  padding: 2.5rem;
+  border-radius: 2rem;
+  width: 70%;
+  margin: 54px 30% 30px;  
+  border: 2px solid white;
 } 
 
 .actionsDesktop {

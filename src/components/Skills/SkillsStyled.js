@@ -39,7 +39,7 @@ h1{
 #box {
   display: flex;
   flex-direction: row; 
-  margin-top: 80px;
+  margin-top: 60px;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -53,7 +53,7 @@ h2 {
   font-family: 'Open Sans', sans-serif;
   color: #F0EBD8;
   font-size: 2em;
-  margin: 40px 40px;
+  margin: 32px 40px;
 }
 
 #work {
@@ -65,5 +65,49 @@ h2 {
 #work img{
   height: 96px;
 }
+
+@media only screen and (max-width: 920px){
+
+  #box {
+    margin-top: 50px;
+  }
+
+  h2 {
+    margin: 18px 40px;
+  }
+
+  #box img{
+    height: 72px;
+  }
+
+  #work img{
+    height: 72px;
+  }
+}
+
+@media only screen and (max-width: 720px){
+  h1{
+    font-size: 3em;
+  }
+
+  #box {
+    margin-top: 40px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    margin: 13px 40px;
+  }
+
+  #box img{
+    margin: 20px;
+    height: 52px;
+  }
+
+  #work img{
+    height: 52px;
+  }
+}
+
 
 `;

@@ -66,7 +66,7 @@ a {
   color: inherit; 
 } 
 
-@media only screen and (max-device-width: 920px){
+@media only screen and (max-width: 920px){
   h1{
     font-size: 3em;
   }
@@ -76,7 +76,7 @@ a {
   }
 }
 
-@media only screen and (max-device-width: 720px){
+@media only screen and (max-width: 720px){
   h1{
     font-size: 2.5em;
   }
@@ -86,7 +86,7 @@ a {
   }
 }
 
-@media only screen and (max-device-width: 520px){
+@media only screen and (max-width: 520px){
   h1{
     font-size: 2em;
     padding: 50px 15px 0;
@@ -107,7 +107,7 @@ a {
   }
 }
 
-@media only screen and (max-device-width: 400px){
+@media only screen and (max-width: 400px){
 
   h1{
     font-size: 1.8em;
@@ -117,8 +117,12 @@ a {
   .profil {
     display: block;
     margin: 0 auto 20px;
-    width: 100%;
+    width: 85%;
     float: none;
+  }
+
+  #aboutMe {
+    text-align: center;
   }
 }
 
