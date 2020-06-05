@@ -1,7 +1,6 @@
 import React from 'react';
 
 // == Import
-
 import Header from 'src/components/Header';
 import PortfolioStyled from './PortfolioStyled';
 

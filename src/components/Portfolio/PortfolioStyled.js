@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export default styled.div`  
 height: 100vh;
-background: linear-gradient(-45deg, #38040E, #38040E, #1D2D44, #0D1321);
+background: linear-gradient(-45deg, #640D14, #38040E, #1D2D44, #0D1321);
 background-size: 400% 400%;
 animation: gradient 15s ease infinite;
 overflow: hidden;
