@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export default styled.div`  
 min-height: 100vh;
-background: linear-gradient(#0D1321, #250902);
+background: linear-gradient(#1D2D44, #38040E);
 overflow: hidden;
 align-items: center;
 display: flex;
@@ -40,7 +40,7 @@ h1{
 #hobbies{
   text-align: center;
   vertical-align: middle;
-  margin: -10px 0 30px 30px;
+  margin-bottom: 10px;
 }
 
 #icon {
@@ -56,22 +56,34 @@ a {
   h1{
     font-size: 3em;
   }
+
+  #hobbies img{
+    height: 52px;
+  }
 }
 
 @media only screen and (max-device-width: 720px){
   h1{
     font-size: 2.5em;
   }
+
+  #hobbies img{
+    height: 42px;
+  }
 }
 
 @media only screen and (max-device-width: 520px){
   h1{
     font-size: 2em;
-    padding: 90px 15px 0;
+    padding: 50px 15px 0;
   }
 
   .profil {
     margin-right: 20px;
+  }
+
+  #hobbies img{
+    height: 32px;
   }
 
   #aboutMe {
@@ -82,6 +94,11 @@ a {
 }
 
 @media only screen and (max-device-width: 400px){
+
+  h1{
+    font-size: 1.8em;
+    padding: 50px 15px 0;
+  }
 
   .profil {
     display: block;

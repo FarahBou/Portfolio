@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export default styled.div`  
 min-height: 100vh;
-background: linear-gradient(#748CAB, #800E13);
+background: linear-gradient(#1D2D44, #38040E);
 overflow: hidden;
 align-items: center;
 display: flex;
