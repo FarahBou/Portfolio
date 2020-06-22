@@ -42,6 +42,35 @@ h1 {
   margin-top: 60px;
   flex-wrap: wrap;
   justify-content: center;
+  min-width: 100%;
+  position: relative;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 10px 0; 
+  border: 2px solid #F0EBD8;
+  font-family: 'Megrim', cursive;
+}
+
+.gif {
+  margin-bottom: 5px;
+}
+
+.card h2 {
+  margin: 0 10px;
+  border-top: 1px solid #F0EBD8;
+  font-family: 'Megrim', cursive;
+  color: #F0EBD8 ;
+  text-align: center;
+  font-size: 2em;
+}
+.card p {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 10px;
+  color: #F0EBD8 ;
+  text-align: center;
+  font-size: 1.5em;
 }
 
 `;

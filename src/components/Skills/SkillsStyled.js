@@ -27,7 +27,7 @@ justify-content: center;
   z-index: 1;
 }
 
-h1{
+h1 {
   font-family: 'Megrim', cursive;
   color: #F0EBD8 ;
   text-align: center;
