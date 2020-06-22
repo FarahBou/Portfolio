@@ -27,7 +27,7 @@ justify-content: center;
   z-index: 1;
 }
 
-h1{
+h1 {
   font-family: 'Megrim', cursive;
   color: #F0EBD8 ;
   text-align: center;
@@ -35,4 +35,13 @@ h1{
   padding-top: 90px;
   text-shadow: 1px 1px 3px black; 
 }
+
+.cards {
+  display: flex;
+  flex-direction: row; 
+  margin-top: 60px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 `;
