@@ -19,6 +19,8 @@ import Node from 'src/assets/skills/icons8-nodejs.svg';
 import Mongo from 'src/assets/skills/icons8-mongodb.svg';
 import Symfony from 'src/assets/skills/icons8-symfony.svg';
 import Python from 'src/assets/skills/icons8-python.svg';
+import Jest from 'src/assets/skills/jest.png';
+import GraphQL from 'src/assets/skills/graphql.png';
 import SkillsStyled from './SkillsStyled';
 
 // == Composant
@@ -88,7 +90,11 @@ const Skills = () => (
       </div>
       <div className="tooltip">
         <img src={Mongo} alt="mongo" />
-        <span className="textWork">MongoDB</span>
+        <span className="textWork">Mongo</span>
+      </div>
+      <div className="tooltip">
+        <img src={GraphQL} alt="graphql" />
+        <span className="textWork">GraphQL</span>
       </div>
       <div className="tooltip">
         <img src={Symfony} alt="symfony" />
@@ -97,6 +103,10 @@ const Skills = () => (
       <div className="tooltip">
         <img src={Python} alt="python" />
         <span className="textWork">Python</span>
+      </div>
+      <div className="tooltip">
+        <img src={Jest} alt="jest" />
+        <span className="textWork">Jest</span>
       </div>
     </div>
   </SkillsStyled>

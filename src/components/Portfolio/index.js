@@ -1,8 +1,10 @@
 import React from 'react';
-import Iframe from 'react-iframe';
+import { Link } from 'react-router-dom';
 
 // == Import
 import Header from 'src/components/Header';
+import AUSGif from 'src/assets/aus.gif';
+import PGif from 'src/assets/portfolio.gif';
 import PortfolioStyled from './PortfolioStyled';
 
 // == Composant
@@ -11,15 +13,28 @@ const Portfolio = () => (
     <Header id="header" slug="Portfolio" />
     <h1>Portfolio</h1>
     <div className="cards">
-      <div className="card">
-        <Iframe
-          src="https://giphy.com/embed/jRqeIOyU0ut8EQtj8U"
+      <a
+        className="card"
+        href="http://209.182.238.244"
+      >
+        <img
+          src={AUSGif}
           className="gif"
-          allowFullScreen
+          alt="gif"
         />
         <h2>Adopte une série</h2>
-        <p>Projet de fin de formation</p>
-      </div>
+      </a>
+      <a
+        className="card"
+        href=""
+      >
+        <img
+          src={PGif}
+          className="gif"
+          alt="gif2"
+        />
+        <h2>Ce Portfolio</h2>
+      </a>
     </div>
   </PortfolioStyled>
 );

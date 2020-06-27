@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export default styled.div`  
-height: 100vh;
+min-height: 100vh;
 background: linear-gradient(-45deg, #640D14, #38040E, #1D2D44, #0D1321);
 background-size: 400% 400%;
 animation: gradient 15s ease infinite;
@@ -45,32 +45,36 @@ h1 {
   min-width: 100%;
   position: relative;
 }
-.card {
-  display: flex;
-  flex-direction: column;
-  padding: 0 0 10px 0; 
-  border: 2px solid #F0EBD8;
-  font-family: 'Megrim', cursive;
-}
 
-.gif {
-  margin-bottom: 5px;
+.card {
+  margin: 20px;
 }
 
 .card h2 {
-  margin: 0 10px;
+  visibility: hidden;
   border-top: 1px solid #F0EBD8;
   font-family: 'Megrim', cursive;
   color: #F0EBD8 ;
   text-align: center;
   font-size: 2em;
 }
-.card p {
-  font-family: 'Open Sans', sans-serif;
-  margin: 0 10px;
-  color: #F0EBD8 ;
-  text-align: center;
-  font-size: 1.5em;
+@media (hover: none) and (pointer:coarse){
+  .card h2 {
+    visibility: visible;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Megrim', cursive;
+  }
+}
+.card:hover {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Megrim', cursive;
+}
+.card:hover h2 {
+  visibility: visible;
 }
 
 `;
