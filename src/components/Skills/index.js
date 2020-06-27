@@ -27,26 +27,77 @@ const Skills = () => (
     <Header id="header" slug="Skills" />
     <h1>Compétences</h1>
     <div id="box">
-      <img src={ReactNat} alt="react" />
-      <img src={Redux} alt="redux" />
-      <img src={Js} alt="js" />
-      <img src={SemanticUi} alt="semanticui" />
-      <img src={Bootstrap} alt="bootstrap" />
-      <img src={Html} alt="html" />
-      <img src={Css} alt="css" />
-      <img src={Php} alt="php" />
-      <img src={Lumen} alt="lumen" />
-      <img src={Sql} alt="sql" />
-      <img src={Api} alt="api" />
-      <img src={Linux} alt="linux" />
-      <img src={Github} alt="github" />
+      <div className="tooltip">
+        <img src={ReactNat} alt="react" />
+        <span className="text">React</span>
+      </div>
+      <div className="tooltip">
+        <img src={Redux} alt="redux" />
+        <span className="text">Redux</span>
+      </div>
+      <div className="tooltip">
+        <img src={Js} alt="js" />
+        <span className="text">JavaScript ES6</span>
+      </div>
+      <div className="tooltip">
+        <img src={SemanticUi} alt="semanticui" />
+        <span className="text">Semantic UI</span>
+      </div>
+      <div className="tooltip">
+        <img src={Bootstrap} alt="bootstrap" />
+        <span className="text">Bootstrap</span>
+      </div>
+      <div className="tooltip">
+        <img src={Html} alt="html" />
+        <span className="text">HTML 5</span>
+      </div>
+      <div className="tooltip">
+        <img src={Css} alt="css" />
+        <span className="text">CSS 3</span>
+      </div>
+      <div className="tooltip">
+        <img src={Php} alt="php" />
+        <span className="text">PHP</span>
+      </div>
+      <div className="tooltip">
+        <img src={Lumen} alt="lumen" />
+        <span className="text">Lumen</span>
+      </div>
+      <div className="tooltip">
+        <img src={Sql} alt="sql" />
+        <span className="text">SQL</span>
+      </div>
+      <div className="tooltip">
+        <img src={Api} alt="api" />
+        <span className="text">API</span>
+      </div>
+      <div className="tooltip">
+        <img src={Linux} alt="linux" />
+        <span className="text">Linux mint</span>
+      </div>
+      <div className="tooltip">
+        <img src={Github} alt="github" />
+        <span className="text">GitHub</span>
+      </div>
     </div>
     <div id="work">
       <h2>En cours d'acquisition : </h2>
-      <img src={Node} alt="node" />
-      <img src={Mongo} alt="mongo" />
-      <img src={Symfony} alt="symfony" />
-      <img src={Python} alt="python" />
+      <div className="tooltip">
+        <img src={Node} alt="node" />
+        <span className="textWork">Node.js</span>
+      </div>
+      <div className="tooltip">
+        <img src={Mongo} alt="mongo" />
+        <span className="textWork">MongoDB</span>
+      </div>
+      <div className="tooltip">
+        <img src={Symfony} alt="symfony" />
+        <span className="textWork">Symfony</span>
+      </div>
+      <div className="tooltip">
+        <img src={Python} alt="python" />
+        <span className="textWork">Python</span>
+      </div>
     </div>
   </SkillsStyled>
 );

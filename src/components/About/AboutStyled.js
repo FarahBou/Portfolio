@@ -37,8 +37,8 @@ h1{
 
 .profil {
   margin-right: 30px;
-  width: 30%;
-  height: 20%;
+  width: 20%;
+  height: 10%;
   float: left;
 }
 

@@ -49,6 +49,73 @@ h1 {
   margin: 40px;
 }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.text {
+  visibility: hidden;
+  width: 120px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 1em;
+  left: 2em;
+}
+
+.textWork {
+  visibility: hidden;
+  width: 120px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  left: -1em;
+  bottom: -1em;
+}
+
+.tooltip:hover .text {
+  visibility: visible;
+}
+
+.tooltip:hover .textWork {
+  visibility: visible;
+}
+
+@media (hover: none) and (pointer:coarse) and (max-width: 770px){
+  .text {
+    visibility: visible;
+  bottom: 1em;
+  left: 1em;
+  }
+  .textWork {
+    visibility: visible;
+  left: -0.5em;
+  bottom: -1em;
+  }
+}
+
+@media (hover: none) and (pointer:coarse) and (max-width: 570px){
+  .text {
+    visibility: visible;
+  bottom: 0.5em;
+  left: -1em;
+  }
+  .textWork {
+    visibility: visible;
+  left: -2em;
+  bottom: -1em;
+  }
+}
+
 h2 {
   font-family: 'Open Sans', sans-serif;
   color: #F0EBD8;
@@ -61,6 +128,7 @@ h2 {
   flex-direction: row; 
   flex-wrap: wrap;
   padding: 0 10px 10px;
+  margin-bottom: 20px;
 }
 
 #work img{

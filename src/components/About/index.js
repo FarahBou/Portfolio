@@ -26,18 +26,22 @@ const About = () => (
         je suis devenu depuis peu développeuse web spécialisée en Front-end | React/Redux.
       </p>
       <p>
-        Mes apétences pour la programmation et la création m'ont naturellement emmené vers le métier
+        En effet, mon apétence pour la programmation et mon interêt pour le design et la création m'ont naturellement emmené vers le métier
         de développeur web.
       </p>
       <p>
         Je me suis donc embarquée en octobre 2019 dans une formation de développeur web fullstack
         au sein de l'école O'clock (labelisée Grande Ecole du Numérique). Un parcours accessible sur admission
         (tests de logique et d'anglais, vidéo de motivation de 15 min),
-        intensif et d'une durée de 5 mois.
+        intensif et d'une durée de 5 mois (3 mois de socle, 1 mois de spécialisation puis 1 mois de projet from scratch en équipe).
       </p>
       <p>
-        Je trouve mon bonheur dans l'acquisition de nouvelles compétences liées
-        au web mais pas seulement, je le trouve également dans mes hobbies :
+        Cette formation est dispensée selon un modèle de télé-présentiel obligatoire
+        (classe virtuelle live avec des professeurs travaillant depuis chez eux ). Les journées types comportent
+        des cours théoriques de 5h puis 2h d'applications pratiques individuelles ou en peer programming.
+      </p>
+      <p>
+        L'acquisition de nouvelles compétences liées au web m'apporte beaucoup de plaisir, mais je trouve également mon bonheur dans mes hobbies :
       </p>
       <div id="hobbies">
         <img src={moto} alt="profil" />
