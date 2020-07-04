@@ -2,14 +2,13 @@
 import React from 'react';
 
 // == Import
-import MUTE from 'src/assets/mute.png';
-import PLAY from 'src/assets/play.png';
-import Sound from 'src/assets/music.mp3';
+import MUTE from 'src/assets/music/mute.png';
+import PLAY from 'src/assets/music/play.png';
+import Sound from 'src/assets/music/music.mp3';
 import MusicStyled from './MusicStyled';
 
 // == Composant
 const Music = () => {
-
   const audio = new Audio(Sound);
 
   const handleClickMute = () => {

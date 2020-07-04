@@ -36,7 +36,7 @@ h1 {
   text-shadow: 1px 1px 3px black; 
 }
 
-.cards {
+#cards {
   display: flex;
   flex-direction: row; 
   margin-top: 60px;
@@ -46,48 +46,10 @@ h1 {
   position: relative;
 }
 
-.card {
-  margin: 20px;
-}
-
-.card h2 {
-  visibility: hidden;
-  border-top: 1px solid #F0EBD8;
-  font-family: 'Megrim', cursive;
-  color: #F0EBD8 ;
-  text-align: center;
-  font-size: 2em;
-}
-@media (hover: none) and (pointer:coarse){
-  .card h2 {
-    visibility: visible;
-  }
-  .card {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Megrim', cursive;
-  }
-}
-.card:hover {
-  display: flex;
-  flex-direction: column;
-  font-family: 'Megrim', cursive;
-}
-.card:hover h2 {
-  visibility: visible;
-}
-
 @media only screen and (max-width: 700px){ 
 
-h1 {
-  font-size: 2.5em;
-} 
-  .card h2 {
-    font-size: 1em;
-  }
-  .gif {
-    max-height: 100%;
-    max-width: 100%;
+  h1 {
+    font-size: 2.5em;
   }
 }
 

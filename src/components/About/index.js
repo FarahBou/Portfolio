@@ -2,16 +2,16 @@ import React from 'react';
 
 // == Import
 import Header from 'src/components/Header';
-import CV from 'src/assets/CV.pdf';
-import Profil from 'src/assets/profil.jpg';
-import moto from 'src/assets/moto.png';
-import piano from 'src/assets/piano.png';
-import travel from 'src/assets/travel.png';
-import fitness from 'src/assets/fitness.png';
-import videogames from 'src/assets/videogames.png';
-import astronomy from 'src/assets/astronomie.png';
-import Download from 'src/assets/download.png';
-import Linkedin from 'src/assets/linkedin.svg';
+import CV from 'src/assets/about/CV.pdf';
+import Profil from 'src/assets/about/profil.jpg';
+import moto from 'src/assets/about/moto.png';
+import piano from 'src/assets/about/piano.png';
+import travel from 'src/assets/about/travel.png';
+import fitness from 'src/assets/about/fitness.png';
+import videogames from 'src/assets/about/videogames.png';
+import astronomy from 'src/assets/about/astronomie.png';
+import Download from 'src/assets/about/download.png';
+import Linkedin from 'src/assets/about/linkedin.svg';
 import AboutStyled from './AboutStyled';
 
 // == Composant
