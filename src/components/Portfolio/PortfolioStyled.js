@@ -77,4 +77,18 @@ h1 {
   visibility: visible;
 }
 
+@media only screen and (max-width: 700px){ 
+
+h1 {
+  font-size: 2.5em;
+} 
+  .card h2 {
+    font-size: 1em;
+  }
+  .gif {
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
 `;
