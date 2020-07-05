@@ -1,3 +1,4 @@
+/* eslint-disable react/button-has-type */
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -6,9 +7,11 @@ import Modal from 'src/components/Modal';
 import ProjectStyled from './ProjectStyled';
 
 // == Composant
-const Project = ({ project }) => {
+function Project({ project }) {
+  const modalRef = React.createRef();
   const openModal = () => {
     console.log('open modal');
+    modalRef.current.openModal();
   };
 
   return (
@@ -24,7 +27,12 @@ const Project = ({ project }) => {
         />
         <h2>{project.title}</h2>
       </a>
-      <Modal project={project} />
+      <Modal ref={modalRef}>
+        <h1 id="modalTitle">{project.title}</h1>
+        <button onClick={() => modalRef.current.close()}>
+          Fermer
+        </button>
+      </Modal>
     </ProjectStyled>
   );
 };
