@@ -29,13 +29,24 @@ function Project({ project }) {
       </a>
       <Modal ref={modalRef}>
         <h1 id="modalTitle">{project.title}</h1>
+        <div id="summary">
+          {project.summary.map((bloc) => <p>{bloc}</p>)}
+        </div>
+        <div id="techno">
+          <p>Techno utilisées: {project.technos.map((techno) => <li>{techno}</li>)}
+          </p>
+        </div>
+        <div id="roles">
+          <p>Rôle: {project.roles.map((role) => <li>{role}</li>)}
+          </p>
+        </div>
         <button onClick={() => modalRef.current.close()}>
           Fermer
         </button>
       </Modal>
     </ProjectStyled>
   );
-};
+}
 
 Project.propTypes = {
   project: PropTypes.object.isRequired,

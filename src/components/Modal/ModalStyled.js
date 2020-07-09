@@ -4,7 +4,7 @@ export default styled.div`
 
 #modalTitle {
   font-size: 2.5em;
-  color: black;
+  color: #1D2D44;
   } 
 .modal-wrapper {
   position: fixed;
