@@ -4,10 +4,13 @@ export default styled.div`
 
 .card {
   margin: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Megrim', cursive;
 }
 
 .card h2 {
-  visibility: hidden;
+  opacity: 0;
   border-top: 1px solid #F0EBD8;
   font-family: 'Megrim', cursive;
   color: #F0EBD8 ;
@@ -16,21 +19,11 @@ export default styled.div`
 }
 @media (hover: none) and (pointer:coarse){
   .card h2 {
-    visibility: visible;
+    opacity: 1;
   }
-  .card {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Megrim', cursive;
-  }
-}
-.card:hover {
-  display: flex;
-  flex-direction: column;
-  font-family: 'Megrim', cursive;
 }
 .card:hover h2 {
-  visibility: visible;
+  opacity: 1;
 }
 
 @media only screen and (max-width: 700px){ 

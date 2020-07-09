@@ -9,10 +9,12 @@ import PortfolioStyled from './PortfolioStyled';
 // == Composant
 const Portfolio = () => (
   <PortfolioStyled>
-    <Header id="header" slug="Portfolio" />
-    <h1>Portfolio</h1>
-    <div id="cards">
-      {projects.map((project) => <Project project={project} />)}
+    <div id="body">
+      <Header id="header" slug="Portfolio" />
+      <h1>Portfolio</h1>
+      <div id="cards">
+        {projects.map((project) => <Project project={project} />)}
+      </div>
     </div>
   </PortfolioStyled>
 );
