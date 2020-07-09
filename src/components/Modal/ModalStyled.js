@@ -28,6 +28,7 @@ export default styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   min-height: 70%;
+  max-height: 100vh;
   width: 80%;
   overflow-y: auto;
   background-color: #F0EBD8 ;
