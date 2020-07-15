@@ -38,7 +38,7 @@ const About = () => (
       <p>
         Cette formation est dispensée selon un modèle de télé-présentiel obligatoire
         (classe virtuelle live avec des professeurs travaillant depuis chez eux ). Les journées types comportent
-        des cours théoriques de 5h puis 2h d'applications pratiques individuelles ou en peer programming.
+        des cours théoriques de 5h puis 2h d'applications pratiques individuelles ou en pair programming.
       </p>
       <p>
         L'acquisition de nouvelles compétences liées au web m'apporte beaucoup de plaisir, mais je trouve également mon bonheur dans mes hobbies :

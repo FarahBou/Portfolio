@@ -4,13 +4,13 @@ import PropTypes from 'prop-types';
 
 // == Import
 import Modal from 'src/components/Modal';
+import Github from 'src/assets/skills/icons8-github.svg';
 import ProjectStyled from './ProjectStyled';
 
 // == Composant
 function Project({ project }) {
   const modalRef = React.createRef();
   const openModal = () => {
-    console.log('open modal');
     modalRef.current.openModal();
   };
 
@@ -28,19 +28,36 @@ function Project({ project }) {
         <h2>{project.title}</h2>
       </a>
       <Modal ref={modalRef}>
-        <h1 id="modalTitle">{project.title}</h1>
+        <a
+          href={project.url}
+        >
+          <h1 id="modalTitle">{project.title}</h1>
+        </a>
+        <img
+          src={project.picture}
+          className="picture"
+          alt="project_picture"
+        />
         <div id="summary">
           {project.summary.map((bloc) => <p>{bloc}</p>)}
         </div>
-        <div id="techno">
-          <p>Techno utilisées: {project.technos.map((techno) => <li>{techno}</li>)}
+        <div id="technos">
+          <p>Technos utilisées: {project.technos.map((techno) => <li>{techno}</li>)}
           </p>
         </div>
         <div id="roles">
           <p>Rôle: {project.roles.map((role) => <li>{role}</li>)}
           </p>
         </div>
-        <button onClick={() => modalRef.current.close()}>
+        <div id="icon">
+          Lien GitHub du projet:
+          <a
+            href={project.git}
+          >
+            <img id="icon" src={Github} alt="git" />
+          </a>
+        </div>
+        <button id="button" onClick={() => modalRef.current.close()}>
           Fermer
         </button>
       </Modal>
