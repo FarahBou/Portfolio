@@ -52,6 +52,7 @@ p {
   text-align: left;
   margin: 80px 30px 10px;
   font-weight: unset;
+  line-height: 1em;
 }
 
 #hobbies{
