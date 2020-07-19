@@ -51,7 +51,7 @@ p {
   font-size: 1.5rem;
   text-align: left;
   margin: 80px 30px 10px;
-  font-weight: unset;
+  font-weight: normal;
   line-height: 1em;
 }
 
