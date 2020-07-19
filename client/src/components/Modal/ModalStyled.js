@@ -35,6 +35,10 @@ export default styled.div`
   flex-direction: column;
 }
 
+p {
+  margin-bottom: 1em;
+}
+
 .picture {
   width: 80%;
   align-self: center;
@@ -78,7 +82,7 @@ export default styled.div`
   color: #F0EBD8;
   background-color: #1D2D44;
   align-self: flex-end;
-  padding: 7px 10px 23px;
+  padding: 7px 10px;
   border: 1px solid #1D2D44;
   border-radius: 30px;
   font-weight: bold;
@@ -140,7 +144,7 @@ export default styled.div`
   }
 
   #button {
-    padding: 5px 10px 18px;
+    padding: 5px 10px;
     font-size: 0.8em;
   }
 }

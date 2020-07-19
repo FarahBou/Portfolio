@@ -32,8 +32,8 @@ h1 {
   color: #F0EBD8 ;
   text-align: center;
   font-size: 4em;
+  font-weight: 100;
   padding-top: 90px;
-  text-shadow: 1px 1px 3px black; 
 }
 
 #box {
@@ -82,14 +82,6 @@ h1 {
   bottom: -1em;
 }
 
-.tooltip:hover .text {
-  visibility: visible;
-}
-
-.tooltip:hover .textWork {
-  visibility: visible;
-}
-
 h2 {
   font-family: 'Open Sans', sans-serif;
   color: #F0EBD8;
@@ -108,46 +100,6 @@ h2 {
 #work img{
   height: 80px;
   margin: 15px 5px;
-}
-
-@media (hover: none) and (pointer:coarse) {
-  .text {
-    visibility: visible;
-    bottom: 1em;
-    left: 2em;
-  }
-  .textWork {
-    visibility: visible;
-    left: -1em;
-    bottom: -1em;
-  }
-}
-
-@media (hover: none) and (pointer:coarse) and (max-width: 770px){
-  .text {
-    visibility: visible;
-    bottom: 1em;
-    left: 1em;
-  }
-  .textWork {
-    visibility: visible;
-    left: -2.5em;
-    bottom: -1em;
-  }
-}
-
-@media (hover: none) and (pointer:coarse) and (max-width: 570px){
-  .text {
-    visibility: visible;
-    bottom: 0.5em;
-    left: -1em;
-  }
-  .textWork {
-    visibility: visible;
-    left: -3.5em;
-    bottom: -1em;
-    font-size: 0.8em;
-  }
 }
 
 @media only screen and (max-width: 920px){

@@ -16,6 +16,7 @@ export default styled.div`
   color: #F0EBD8 ;
   text-align: center;
   font-size: 2em;
+  margin-top: 20px;
 }
 @media (hover: none) and (pointer:coarse){
   .card h2 {
@@ -30,6 +31,7 @@ export default styled.div`
 
   .card h2 {
     font-size: 1em;
+  margin-top: 15px;
   }
   .gif {
     max-height: 100%;

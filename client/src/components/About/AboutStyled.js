@@ -31,8 +31,7 @@ h1{
   color: #F0EBD8 ;
   text-align: center;
   font-size: 4em;
-  padding-top: 90px;
-  text-shadow: 1px 1px 3px black; 
+  font-weight: 100; 
 }
 
 .profil {
@@ -42,13 +41,17 @@ h1{
   float: left;
 }
 
+p {
+  margin-bottom: 1em;
+}
+
 #aboutMe {
   font-family: 'Open Sans', sans-serif;
   color: #F0EBD8 ;
   font-size: 1.5rem;
-  line-height: 1.3em;
   text-align: left;
-  margin: 80px 30px 10px 30px;
+  margin: 80px 30px 10px;
+  font-weight: unset;
 }
 
 #hobbies{
@@ -89,7 +92,7 @@ a {
 @media only screen and (max-width: 520px){
   h1{
     font-size: 2em;
-    padding: 50px 15px 0;
+    margin: 100px 15px 30px;
   }
 
   .profil {
@@ -102,8 +105,7 @@ a {
 
   #aboutMe {
     font-size: 1.2rem;
-    line-height: 1.1em;
-    margin: 30px 30px 10px 30px;
+    margin: 30px 30px 10px;
   }
 }
 
@@ -111,7 +113,6 @@ a {
 
   h1{
     font-size: 1.8em;
-    padding: 50px 15px 0;
   }
 
   .profil {
@@ -122,7 +123,7 @@ a {
   }
 
   #aboutMe {
-    text-align: center;
+    font-size: 1.1rem;
   }
 }
 

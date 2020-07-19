@@ -23,14 +23,14 @@ const About = () => (
       <img src={Profil} alt="profil" className="profil" />
       <p>
         Anciennement ingénieure calculs chez Framatome (ex-Areva),
-        je suis devenu depuis peu développeuse web spécialisée en Front-end | React/Redux.
+        je suis devenue depuis peu développeuse web spécialisée en Front-end | React/Redux.
       </p>
       <p>
-        En effet, mon apétence pour la programmation et mon interêt pour le design et la création m'ont naturellement emmené vers le métier
+        En effet, mon apétence pour la programmation, mon interêt pour le design et la création m'ont naturellement emmené vers le métier
         de développeur web.
       </p>
       <p>
-        Je me suis donc embarquée en octobre 2019 dans une formation de développeur web fullstack
+        Je me suis donc lancée en octobre 2019 dans une formation de développeur web fullstack
         au sein de l'école O'clock (labelisée Grande Ecole du Numérique). Un parcours accessible sur admission
         (tests de logique et d'anglais, vidéo de motivation de 15 min),
         intensif et d'une durée de 5 mois (3 mois de socle, 1 mois de spécialisation puis 1 mois de projet from scratch en équipe).

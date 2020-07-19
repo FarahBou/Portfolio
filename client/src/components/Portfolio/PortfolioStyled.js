@@ -32,8 +32,8 @@ h1 {
   color: #F0EBD8 ;
   text-align: center;
   font-size: 4em;
+  font-weight: 100;
   padding-top: 90px;
-  text-shadow: 1px 1px 3px black; 
 }
 
 #cards {
