@@ -1,6 +1,7 @@
 /* eslint-disable react/button-has-type */
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Button } from 'semantic-ui-react';
 
 // == Import
 import Modal from 'src/components/Modal';
@@ -57,9 +58,15 @@ function Project({ project }) {
             <img id="icon" src={Github} alt="git" />
           </a>
         </div>
-        <button id="button" onClick={() => modalRef.current.close()}>
+        <Button
+          inverted
+          type="button"
+          id="button"
+          style={{backgroundColor: '#1D2D44', color: "#F0EBD8"}}
+          onClick={() => modalRef.current.close()}
+        >
           Fermer
-        </button>
+        </Button>
       </Modal>
     </ProjectStyled>
   );

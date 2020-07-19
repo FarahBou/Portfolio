@@ -79,13 +79,8 @@ p {
 
 #button {
   font-family: 'Megrim', cursive;
-  color: #F0EBD8;
-  background-color: #1D2D44;
   align-self: flex-end;
   padding: 7px 10px;
-  border: 1px solid #1D2D44;
-  border-radius: 30px;
-  font-weight: bold;
   margin-top: 30px;
 }
 
