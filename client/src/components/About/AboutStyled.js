@@ -32,6 +32,7 @@ h1{
   text-align: center;
   font-size: 4em;
   font-weight: 100; 
+  margin-top: 100px;
 }
 
 .profil {
