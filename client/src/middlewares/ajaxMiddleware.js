@@ -25,7 +25,7 @@ const ajaxMiddleware = (store) => (next) => (action) => {
 
       axios({
         method: 'post',
-        url: 'http://18.210.15.139:3002/Contact/send',
+        url: 'http://18.210.15.139:3002/send',
         data: {
           name: state.name,
           email: state.email,
