@@ -70,18 +70,20 @@ p {
 }
 
 #icon {
-  margin: 5px;
-  font-size: 1.3em;
-  font-family: 'Open Sans', sans-serif;
   height:44px;
   margin: 0 0 -16px 5px;
 }
 
+#iconDiv {
+  font-size: 1.3em;
+  font-family: 'Open Sans', sans-serif;
+}
+
 #button {
   font-family: 'Megrim', cursive;
-  align-self: flex-end;
-  padding: 7px 10px;
-  margin-top: 30px;
+  margin: 30px;
+  position: absolute;
+  right: -15px;
 }
 
 @media only screen and (max-width: 600px){ 

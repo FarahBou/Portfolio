@@ -50,23 +50,21 @@ function Project({ project }) {
           <p>Rôle: {project.roles.map((role) => <li>{role}</li>)}
           </p>
         </div>
-        <div id="icon">
-          Lien GitHub du projet:
+        <div id="iconDiv">
           <a
             href={project.git}
           >
+            GitHub:
             <img id="icon" src={Github} alt="git" />
           </a>
+          <Button
+            id="button"
+            style={{backgroundColor: '#1D2D44', color: "#F0EBD8"}}
+            onClick={() => modalRef.current.close()}
+          >
+            Fermer
+          </Button>
         </div>
-        <Button
-          inverted
-          type="button"
-          id="button"
-          style={{backgroundColor: '#1D2D44', color: "#F0EBD8"}}
-          onClick={() => modalRef.current.close()}
-        >
-          Fermer
-        </Button>
       </Modal>
     </ProjectStyled>
   );
