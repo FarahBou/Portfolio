@@ -47,7 +47,7 @@ p {
 #modalTitle {
   font-size: 2.5em;
   color: #1D2D44;    
-  margin: -90px 0 76px;
+  margin: -90px 0 40px;
   border-bottom: 1px solid #1D2D44;
 } 
 
@@ -107,9 +107,12 @@ p {
     font-size: 1em;
   }
 
+  #iconDiv {
+  font-size: 1em;
+  }
+
   #icon {
     height: 32px;
-    font-size: 1em;
     margin: 0 0 -11px 5px;
   }
 
@@ -132,6 +135,10 @@ p {
   }
 
   #roles {
+    font-size: 0.8em;
+  }
+
+  #iconDiv {
     font-size: 0.8em;
   }
 
