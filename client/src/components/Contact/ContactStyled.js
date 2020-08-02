@@ -31,7 +31,7 @@ h1{
   font-family: 'Megrim', cursive;
   color: #F0EBD8 ;
   text-align: center;
-  font-size: 4em;
+  font-size: 3em;
   font-weight: 100;
   margin-top: 100px;
 }

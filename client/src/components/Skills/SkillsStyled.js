@@ -31,7 +31,7 @@ h1 {
   font-family: 'Megrim', cursive;
   color: #F0EBD8 ;
   text-align: center;
-  font-size: 4em;
+  font-size: 3em;
   font-weight: 100;
   padding-top: 90px;
 }
@@ -123,7 +123,7 @@ h2 {
 
 @media only screen and (max-width: 720px){
   h1{
-    font-size: 2.5em;
+    font-size: 2em;
   }
 
   #box {

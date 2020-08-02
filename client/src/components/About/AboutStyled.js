@@ -30,7 +30,7 @@ h1{
   font-family: 'Megrim', cursive;
   color: #F0EBD8 ;
   text-align: center;
-  font-size: 4em;
+  font-size: 3em;
   font-weight: 100; 
   margin: 100px 0 0;
 }
@@ -72,7 +72,7 @@ a {
 
 @media only screen and (max-width: 920px){
   h1{
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
   #hobbies img{
@@ -82,7 +82,7 @@ a {
 
 @media only screen and (max-width: 720px){
   h1{
-    font-size: 2.5em;
+    font-size: 2em;
   }
 
   #hobbies img{
@@ -92,7 +92,7 @@ a {
 
 @media only screen and (max-width: 520px){
   h1{
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 100px 15px 30px;
   }
 
@@ -113,7 +113,7 @@ a {
 @media only screen and (max-width: 400px){
 
   h1{
-    font-size: 1.8em;
+    font-size: 1.3em;
   }
 
   .profil {
