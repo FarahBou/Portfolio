@@ -21,7 +21,7 @@ p {
   left: 20px;
   p {
     padding: 0 9px;
-    font-size: 1em;
+    font-size: 0.8em;
   }
 }
 
@@ -29,7 +29,7 @@ p {
   left: 13px;
   p {
     padding: 0 7px;
-    font-size: 0.9em;
+    font-size: 0.7em;
   }
 }
 
@@ -37,7 +37,7 @@ p {
   left: 13px;
   p {
     padding: 0 5px;
-    font-size: 0.8em;
+    font-size: 0.6em;
   }
 }
 
