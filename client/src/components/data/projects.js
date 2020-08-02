@@ -1,5 +1,6 @@
 import AUSGif from 'src/assets/portfolio/aus.gif';
 import Pic from 'src/assets/portfolio/AUS_pres.png';
+import PortfolioPic from 'src/assets/portfolio/portfolio.png';
 import PGif from 'src/assets/portfolio/portfolio.gif';
 
 const projects = [
@@ -40,7 +41,7 @@ const projects = [
     roles: [
       'Product owner',
     ],
-    picture: '',
+    picture: PortfolioPic,
   },
 ];
 

@@ -5,7 +5,7 @@ var cors = require('cors');
 const creds = require('./config');
 
 var transport = {
-    host: 'smtp.gmail.com', // Don’t forget to replace with the SMTP host of your provider
+    host: 'ses-smtp-user.20200802-182900', // Don’t forget to replace with the SMTP host of your provider
     port: 465,
     secure: true,
     auth: {
