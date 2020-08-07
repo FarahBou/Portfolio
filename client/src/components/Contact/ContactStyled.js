@@ -40,7 +40,7 @@ h1{
   color: #F0EBD8 ;
   padding: 2.5rem;
   border-radius: 2rem;
-  width: 60%;
+  width: 40%;
   margin: 54px 0 30px;  
   border: 2px solid white;
 } 
@@ -54,7 +54,7 @@ h1{
   font-size: 1.5em;
 }
 
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 770px){
 
   h1{
     font-size: 2em;
