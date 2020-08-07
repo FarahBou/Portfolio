@@ -1,0 +1,14 @@
+EHLO farah-bouzbib.com
+AUTH LOGIN
+QUtJQVNPMkRQRDJXMkY3R1hJTEo=
+QkxrbTVYS3plaXJUMDBROGxsS3Flc3FlM3N6SVYzcWo4WWdtZnRCNXc3Wkw=
+MAIL FROM: f.bouzbib@gmail.com
+RCPT TO: f.bouzbib@gmail.com
+DATA
+From: Sender Name <f.bouzbib@gmail.com>
+To: f.bouzbib@gmail.com
+Subject: Amazon SES SMTP Test
+
+This message was sent using the Amazon SES SMTP interface.
+.
+QUIT

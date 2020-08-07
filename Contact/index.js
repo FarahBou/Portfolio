@@ -4,7 +4,7 @@ var nodemailer = require('nodemailer');
 var cors = require('cors');
 const creds = require('./config');
 
-var transport = {
+var transporter =nodemailer.createTransport({
     host: 'email-smtp.us-west-2.amazonaws.com', // Don’t forget to replace with the SMTP host of your provider
     port: 465,
     secureConnection: true,
@@ -12,9 +12,7 @@ var transport = {
     user: creds.USER,
     pass: creds.PASS
   }
-}
-
-var transporter = nodemailer.createTransport("SMTP", transport)
+});
 
 transporter.verify((error) => {
   if (error) {
@@ -67,4 +65,4 @@ const app = express()
 app.use(cors({origin: true, credentials: true}))
 app.use(express.json())
 app.use('/', router)
-app.listen(3002, () => console.log("listening on 3000"))
+app.listen(3002, () => console.log("listening on 3002"))
