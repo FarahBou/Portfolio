@@ -11,7 +11,7 @@ app.get('*', (req, res) => {
 res.sendFile(path.resolve('../client/dist/index.html'));
 });
 
-// if not in production use the port 5000
-const PORT = process.env.PORT || 5000;
+// if not in production use the port 80
+const PORT = process.env.PORT || 80;
 console.log('server started on port:',PORT);
 app.listen(PORT);
