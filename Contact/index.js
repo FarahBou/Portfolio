@@ -5,16 +5,16 @@ var cors = require('cors');
 const creds = require('./config');
 
 var transport = {
-    host: 'ses-smtp-user.20200802-182900', // Don’t forget to replace with the SMTP host of your provider
+    host: 'email-smtp.us-west-2.amazonaws.com', // Don’t forget to replace with the SMTP host of your provider
     port: 465,
-    secure: true,
+    secureConnection: true,
     auth: {
     user: creds.USER,
     pass: creds.PASS
   }
 }
 
-var transporter = nodemailer.createTransport(transport)
+var transporter = nodemailer.createTransport("SMTP", transport)
 
 transporter.verify((error) => {
   if (error) {
