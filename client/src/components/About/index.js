@@ -2,7 +2,7 @@ import React from 'react';
 
 // == Import
 import Header from 'src/components/Header';
-import CV from 'src/assets/about/CV.pdf';
+import CV from 'src/assets/about/CV_Farah_Bouzbib.pdf';
 import Profil from 'src/assets/about/profil.jpg';
 import moto from 'src/assets/about/moto.png';
 import piano from 'src/assets/about/piano.png';
