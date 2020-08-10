@@ -26,7 +26,7 @@ const About = () => (
         je suis devenue depuis peu développeuse web spécialisée en Front-end | React/Redux.
       </p>
       <p>
-        En effet, mon apétence pour la programmation, mon interêt pour le design et la création m'ont naturellement emmené vers le métier
+        En effet, mon appétence pour la programmation, mon interêt pour le design et la création m'ont naturellement emmené vers le métier
         de développeur web.
       </p>
       <p>
