@@ -1,68 +1,76 @@
 var express = require('express');
 var router = express.Router();
-var nodemailer = require('nodemailer');
 var cors = require('cors');
-const creds = require('./config');
+let aws = require('aws-sdk');
+aws.config.loadFromPath('./config.json');
 
-var transporter =nodemailer.createTransport({
-    host: 'email-smtp.us-west-2.amazonaws.com', // Don’t forget to replace with the SMTP host of your provider
-    port: 465,
-    secureConnection: true,
-    auth: {
-    user: creds.USER,
-    pass: creds.PASS
-  }
-});
-
-transporter.verify((error) => {
-  if (error) {
-    console.log(error);
-  } else {
-    console.log('Server is ready to take messages');
-  }
-});
+var ses = new aws.SES();
 
 router.post('/send', (req, res, next) => {
-  var name = req.body.name
-  var email = req.body.email
-  var message = req.body.message
-  var content = `name: ${name} \n email: ${email} \n message: ${message} `
+  var name = req.body.name.toString()
+  var email = req.body.email.toString()
+  var message = req.body.message.toString()
+  var content = 'name:' + name + '\n email:' + email + '\n message:' + message
 
-  var mail = {
-    from: name,
-    to: creds.USER,  // Change to email address that you want to receive messages on
-    subject: 'New Message from Contact Form',
-    text: content
-  }
+  var params = {
+    Source: 'f.bouzbib@gmail.com',
+    Destination: {
+     ToAddresses: [
+      'f.bouzbib@gmail.com',
+     ]
+    }, 
+    Message: {
+     Body: {
+      Text: {
+       Charset: "UTF-8", 
+       Data: content.toString()
+      }
+     }, 
+     Subject: {
+      Charset: "UTF-8", 
+      Data: 'New Message from Contact Form'
+     }
+    }, 
+   };
 
-  transporter.sendMail(mail, (err) => {
+  var paramsR = {
+    Source: 'f.bouzbib@gmail.com',
+    Destination: {
+     ToAddresses: [
+      email,
+     ]
+    }, 
+    Message: {
+     Body: {
+      Text: {
+       Charset: "UTF-8", 
+       Data: 'Merci pour votre message!\nMes Oompas Loompas me l\'ont bien transféré, vous recevrez une réponse de ma part le plus rapidement possible.\n\nDétails du formulaire\nNom:' + name + '\nEmail:' + email + '\n Message:' + message
+      }
+     }, 
+     Subject: {
+      Charset: "UTF-8", 
+      Data: 'Votre message a bien été envoyé',
+     }
+    }, 
+   }
+
+  ses.sendEmail(params, function (err) {
     if (err) {
       res.json({
         status: 'fail'
       })
-    } else {
+      console.log(err, err.stack); // an error occurred
+    }
+    else {
       res.json({
        status: 'success'
       })
-
-  	transporter.sendMail({
-    	from: "<your email address>",
-    	to: email,
-    	subject: "Votre message a bien été envoyé",
-    	text: `Merci pour votre message! Mes Oompas Loompas me l'ont bien transféré, vous recevrez une réponse de ma part le plus rapidement possible.\n\nForm details\nName: ${name}\n Email: ${email}\n Message: ${message}`
-  	}, function(error, info){
-    	if(error) {
-      	console.log(error);
-    	} else{
-      	console.log('Message sent: ' + info.response);
-    	}
-  	});
-    }
-  })
+    };
+  });
 })
 
 const app = express()
 app.use(cors({origin: true, credentials: true}))
 app.use(express.json())
 app.use('/', router)
-app.listen(3002, () => console.log("listening on 3002"))
+app.listen(3000, () => console.log("listening on 3000"))

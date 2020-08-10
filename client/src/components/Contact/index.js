@@ -55,7 +55,7 @@ const Contact = ({
 
         <div className="actionsDesktop">
           {(status === 'success')
-            && (<p style={{ color: 'green', paddingBottom: '20px' }}>Le message a bien été envoyé</p>)}
+            && (<p style={{ color: 'green', paddingBottom: '20px' }}>Votre message a bien été envoyé!</p>)}
           {(status === 'fail')
             && (<p style={{ color: 'red', paddingBottom: '20px' }}>Une erreur est survenue</p>)}
           {(message.length > 0)
