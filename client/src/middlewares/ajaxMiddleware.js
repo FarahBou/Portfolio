@@ -25,7 +25,7 @@ const ajaxMiddleware = (store) => (next) => (action) => {
 
       axios({
         method: 'post',
-        url: 'http://localhost:3000/send',
+        url: 'http://farah-bouzbib.com:3000/send',
         data: {
           name: state.name,
           email: state.email,
