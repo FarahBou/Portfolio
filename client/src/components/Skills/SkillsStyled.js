@@ -46,6 +46,7 @@ h1 {
 
 #box img{
   height: 96px;
+  width: 96px;
   margin: 40px;
 }
 
@@ -82,6 +83,47 @@ h1 {
   bottom: -1em;
 }
 
+.tooltip:hover .text {
+  visibility: visible;
+}
+.tooltip:hover .textWork {
+  visibility: visible;
+}
+
+@media (hover: none) and (pointer:coarse) and (max-width: 1400px){
+  .text {
+    visibility: visible;
+  }
+  .textWork {
+    visibility: visible;
+  }
+}
+
+@media (hover: none) and (pointer:coarse) and (max-width: 920px){
+  .text {
+    visibility: visible;
+    left: 1em;
+  }
+  .textWork {
+    visibility: visible;
+    left: -1.5em;
+  }
+}
+
+@media (hover: none) and (pointer:coarse) and (max-width: 720px){
+  .text {
+    visibility: visible;
+    left: -1em;
+    bottom: 0;
+  }
+  .textWork {
+    visibility: visible;
+    left: -3em;
+    bottom: 0;
+    font-size: 0.8em;
+  }
+}
+
 h2 {
   font-family: 'Open Sans', sans-serif;
   color: #F0EBD8;
@@ -99,6 +141,7 @@ h2 {
 
 #work img{
   height: 80px;
+  width: 80px;
   margin: 15px 5px;
 }
 
@@ -114,10 +157,21 @@ h2 {
 
   #box img{
     height: 72px;
+    width: 72px;
   }
 
   #work img{
-    height: 60px;
+    height: 72px;
+    width: 72px;
+  }
+
+  .tooltip:hover .text {
+    visibility: visible;
+    left: 1em;
+  }
+  .tooltip:hover .textWork {
+    visibility: visible;
+    left: -1.5em;
   }
 }
 
@@ -137,11 +191,13 @@ h2 {
 
   #box img{
     margin: 20px;
+    width: 52px;
     height: 52px;
   }
 
   #work img{
-    height: 40px;
+    height: 52px;
+    width: 52px;
     padding-right: 10px;
   }
 
@@ -150,6 +206,18 @@ h2 {
     flex-direction: row; 
     flex-wrap: wrap;
     justify-content: center;
+  }
+  
+  .tooltip:hover .text {
+    visibility: visible;
+    left: -1em;
+    bottom: 0;
+  }
+  .tooltip:hover .textWork {
+    visibility: visible;
+    left: -3em;
+    bottom: 0;
+    font-size: 0.8em;
   }
 }
 

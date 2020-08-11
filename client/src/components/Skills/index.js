@@ -39,7 +39,7 @@ const Skills = () => (
       </div>
       <div className="tooltip">
         <img src={Js} alt="js" />
-        <span className="text">JavaScript ES6</span>
+        <span className="text">JS ES6</span>
       </div>
       <div className="tooltip">
         <img src={SemanticUi} alt="semanticui" />
@@ -90,7 +90,7 @@ const Skills = () => (
       </div>
       <div className="tooltip">
         <img src={Mongo} alt="mongo" />
-        <span className="textWork">Mongo</span>
+        <span className="textWork">MongoDB</span>
       </div>
       <div className="tooltip">
         <img src={GraphQL} alt="graphql" />
