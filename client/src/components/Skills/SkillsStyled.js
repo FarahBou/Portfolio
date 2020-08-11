@@ -115,6 +115,7 @@ h1 {
     visibility: visible;
     left: -1em;
     bottom: 0;
+    font-size: 0.8em;
   }
   .textWork {
     visibility: visible;
