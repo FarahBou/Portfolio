@@ -81,9 +81,6 @@ const Skills = () => (
         <img src={Github} alt="github" />
         <span className="text">GitHub</span>
       </div>
-    </div>
-    <div id="work">
-      <h2>En cours d'acquisition : </h2>
       <div className="tooltip">
         <img src={Node} alt="node" />
         <span className="textWork">Node.js</span>
@@ -92,6 +89,9 @@ const Skills = () => (
         <img src={Mongo} alt="mongo" />
         <span className="textWork">MongoDB</span>
       </div>
+    </div>
+    <div id="work">
+      <h2>En cours d'acquisition : </h2>
       <div className="tooltip">
         <img src={GraphQL} alt="graphql" />
         <span className="textWork">GraphQL</span>
