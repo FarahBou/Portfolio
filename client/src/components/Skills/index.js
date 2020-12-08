@@ -83,11 +83,11 @@ const Skills = () => (
       </div>
       <div className="tooltip">
         <img src={Node} alt="node" />
-        <span className="textWork">Node.js</span>
+        <span className="text">Node.js</span>
       </div>
       <div className="tooltip">
         <img src={Mongo} alt="mongo" />
-        <span className="textWork">MongoDB</span>
+        <span className="text">MongoDB</span>
       </div>
     </div>
     <div id="work">
