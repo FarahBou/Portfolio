@@ -57,16 +57,16 @@ const Header = ({ slug }) => {
 
   return (
     <HeaderStyled>
-      <Link to="/A-propos">
+      <Link to="/Portfolio/A-propos">
         <p id="about">A propos</p>
       </Link>
-      <Link to="/Compétences">
+      <Link to="/Portfolio/Compétences">
         <p id="skills">Compétences</p>
       </Link>
-      <Link to="/Portfolio">
-        <p id="portfolio">Portfolio</p>
+      <Link to="/Portfolio/Projects">
+        <p id="portfolio">Projets</p>
       </Link>
-      <Link to="/Contact">
+      <Link to="/Portfolio/Contact">
         <p id="contact">Contact</p>
       </Link>
     </HeaderStyled>

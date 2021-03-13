@@ -11,6 +11,13 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 
+.cards {  
+  margin: 3rem;
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -23,27 +30,12 @@ justify-content: center;
   }
 }
 
-#header {
-  z-index: 1;
-}
-
 h1 {
   font-family: 'Megrim', cursive;
   color: #F0EBD8 ;
   text-align: center;
   font-size: 3em;
   font-weight: 100;
-  padding-top: 90px;
-}
-
-#cards {
-  display: flex;
-  flex-direction: row; 
-  margin-top: 60px;
-  flex-wrap: wrap;
-  justify-content: center;
-  min-width: 100%;
-  position: relative;
 }
 
 @media only screen and (max-width: 720px){ 

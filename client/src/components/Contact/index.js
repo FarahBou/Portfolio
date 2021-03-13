@@ -5,9 +5,9 @@ import { Button } from 'semantic-ui-react';
 
 // == Import
 
-import Header from 'src/components/Header';
-import Field from 'src/components/Field';
-import FieldTA from 'src/components/FieldTextArea';
+import Header from '../Header';
+import Field from '../Field';
+import FieldTA from '../FieldTextArea';
 import ContactStyled from './ContactStyled';
 
 // == Composant
