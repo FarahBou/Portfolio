@@ -20,12 +20,12 @@ const App = () => (
     <Switch>
       {/* on peut passer la prop component avec le composant
       si on a pas de data à transmettre */}
-      <Route exact path="/Portfolio" component={Home} />
-      <Route exact path="/Portfolio/A-propos" component={About} />
-      <Route exact path="/Portfolio/Compétences" component={Skills} />
-      <Route exact path="/Portfolio/Projects" component={Portfolio} />
-      <Route exact path="/Portfolio/Contact" component={Contact} />
-      <Route exact path="/Portfolio/Movies" component={Movies} />
+      <Route exact path="/" component={Home} />
+      <Route exact path="/A-propos" component={About} />
+      <Route exact path="/Compétences" component={Skills} />
+      <Route exact path="/Projects" component={Portfolio} />
+      <Route exact path="/Contact" component={Contact} />
+      <Route exact path="/Movies" component={Movies} />
       <Route>
         <NotFound />
       </Route>

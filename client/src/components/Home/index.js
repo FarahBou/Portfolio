@@ -43,7 +43,7 @@ window.onload=function(){
   return (
     <HomeStyled> 
       <div className='about' >   
-        <Link to="/Portfolio/A-propos">
+        <Link to="A-propos">
           <p className='content'>A propos</p> 
         </Link>  
         <div className='night_about'>
@@ -55,7 +55,7 @@ window.onload=function(){
         </div>             
       </div>
       <div className='skills' >   
-        <Link to="/Portfolio/Compétences">
+        <Link to="/Compétences">
           <p className='content'>Compétences</p>
         </Link> 
         <div className='night_skills'>
@@ -67,7 +67,7 @@ window.onload=function(){
         </div>  
       </div>
       <div className='portfolio' >   
-        <Link to="/Portfolio/Projects">
+        <Link to="/Projects">
           <p className='content'>Projets</p>
         </Link> 
         <div className='night_portfolio'>
@@ -79,7 +79,7 @@ window.onload=function(){
         </div>  
       </div>
       <div className='contact' >   
-        <Link to="/Portfolio/Contact">
+        <Link to="/Contact">
           <p className='content'>Contact</p>
         </Link> 
         <div className='night_contact'>
