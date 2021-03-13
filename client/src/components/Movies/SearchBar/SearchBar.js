@@ -85,8 +85,6 @@ const SearchBar = ({
 
 SearchBar.propTypes = {
   inputValue: PropTypes.string.isRequired,
-  sendName: PropTypes.func.isRequired,
-  sendIds: PropTypes.func.isRequired,
 };
 
 
