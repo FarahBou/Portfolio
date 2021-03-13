@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import { Input, Dropdown } from 'semantic-ui-react';
-import { Card, Image } from 'semantic-ui-react';
 
 // == Import
 import PortfolioStyled from './MoviesStyled';
@@ -8,14 +6,12 @@ import SearchBar from './SearchBar/SearchBar';
 import movies from '../../data/movies';
 
 // == Composant
-const Portfolio = (
-  sendName,
-  sendGenres,
-  inputValue,
-  ) => {
+const Movies = () => {
   const [ moviesTitles, setMoviesTitles ] = useState(movies);
+  const [inputValue, setInputValue] = useState('');
 
   const handleChange = (evt) => {
+    setInputValue(evt.target.value);
     const moviesInput = evt.target.value.length > 0
     ? movies.filter((movie) => movie.name.includes(evt.target.value))
     : movies
@@ -54,4 +50,4 @@ return (
 
 
 // == Export
-export default Portfolio;
+export default Movies;
